@@ -17,7 +17,7 @@ Cat multiple documents to the terminal. The continuation of CatMD
 
 - [Features](#features)
 	- [Document Compatability](#document-compatability)
-	- [Terminal rendering](#terminal-rendering)
+	- [Terminal 'rendering'](#terminal-rendering)
 - [Roadmap](#roadmap)
 - [Install With PIP](#install-with-pip)
 - [Use](#use)
@@ -97,7 +97,7 @@ Wiki markup formats
 - TWiki markup
 - Jira wiki markup
 
-### Terminal rendering
+### Terminal 'rendering'
 Highlights the following:
 - Headers 1-6
 - Unordered and ordered lists

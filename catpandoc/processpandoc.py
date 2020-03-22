@@ -68,7 +68,7 @@ def toPlaintext(inline):
 	if inline["t"] == "Quoted":
 		# quotetype, inline[]
 		text = []
-		for newInline in inline["c"]:
+		for newInline in inline["c"][1]:
 			text.append("\'" + toPlaintext(newInline) + "\'")
 		return "".join(text)
 	if inline["t"] == "Code":
