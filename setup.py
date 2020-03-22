@@ -7,7 +7,7 @@ with open("README.md", "r") as readme:
 
 setuptools.setup(
 	name="catpandoc",
-	version="2020",
+	version="2020.1",
 	author="FredHappyface",
 	description="Cat multiple document files to the terminal",
 	long_description=long_description,

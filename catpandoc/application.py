@@ -35,7 +35,7 @@ def handle(args):
 	if args.width is not None:
 		width = int(args.width)
 	if args.padding is not None:
-		width = int(args.padding)
+		padding = int(args.padding)
 	theme = (4, 0, 4)
 	if args.theme is not None:
 		theme = tuple([int(col) for col in args.theme.split(",")])
