@@ -57,7 +57,7 @@ class Pandoc2Plain():
 
 	def header(self, content):
 		'''Process a header '''
-		self.print("\n", end=" ")
+		self.print("\n", end="")
 		concatContent = ""
 		if content[0] > 3:
 			for part in content[-1]:
