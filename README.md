@@ -33,13 +33,18 @@ Cat multiple documents to the terminal. The continuation of CatMD
 - [How to run](#how-to-run)
 	- [With VSCode](#with-vscode)
 	- [From the Terminal](#from-the-terminal)
-- [Changelog](#changelog)
+- [How to update, build and publish](#how-to-update-build-and-publish)
 - [Download](#download-1)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
 		- [Using GitHub Desktop](#using-github-desktop)
 	- [Download Zip File](#download-zip-file)
-- [Licence](#licence)
+- [Community Files](#community-files)
+	- [Licence](#licence)
+	- [Changelog](#changelog)
+	- [Code of Conduct](#code-of-conduct)
+	- [Contributing](#contributing)
+	- [Security](#security)
 - [Screenshots](#screenshots)
 	- [Desktop](#desktop)
 	- [Themes](#themes)
@@ -182,9 +187,33 @@ Interpreter > Python 3.8)
 ./[file].py
 ```
 
+## How to update, build and publish
 
-## Changelog
-See the [CHANGELOG](/CHANGELOG.md) for more information.
+1. Ensure you have installed the following dependencies
+	Linux
+	```bash
+	wget dephell.org/install | python3.8
+	wget https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3.8
+	```
+	Windows
+	```powershell
+	(wget dephell.org/install -UseBasicParsing).Content | python
+	(wget https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python
+	```
+2. Use poetry for the heavy lifting and dephell to generate requirements
+	```bash
+	poetry update
+	dephell deps convert
+	```
+3. Build/ Publish
+	```bash
+	poetry build
+	poetry publish
+	```
+	or
+	```bash
+	poetry publish --build
+	```
 
 
 ## Download
@@ -216,12 +245,27 @@ More information can be found at
 2. Extract the zip archive
 3. Copy/ move to the desired location
 
-
-## Licence
+## Community Files
+### Licence
 MIT License
 Copyright (c) FredHappyface
 (See the [LICENSE](/LICENSE.md) for more information.)
 
+### Changelog
+See the [Changelog](/CHANGELOG.md) for more information.
+
+### Code of Conduct
+In the interest of fostering an open and welcoming environment, we
+as contributors and maintainers pledge to make participation in our
+project and our community a harassment-free experience for everyone.
+Please see the
+[Code of Conduct](https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md) for more information.
+
+### Contributing
+Contributions are welcome, please see the [Contributing Guidelines](https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md) for more information.
+
+### Security
+Thank you for improving the security of the project, please see the [Security Policy](https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md) for more information.
 
 ## Screenshots
 
