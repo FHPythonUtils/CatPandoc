@@ -42,15 +42,15 @@ def handle(args):
 
 	# Print to console
 	if args.to_plain:
+		pandoc = pandoc2plain.Pandoc2Plain(width, padding)
 		for block in output["blocks"]:
-			pandoc = pandoc2plain.Pandoc2Plain(width, padding)
 			processpandoc.processBlock(block, pandoc)
-			print(pandoc.genOutput())
+		print(pandoc.genOutput())
 	else:
+		pandoc = pandoc2ansi.Pandoc2Ansi(width, padding, theme)
 		for block in output["blocks"]:
-			pandoc = pandoc2ansi.Pandoc2Ansi(width, padding, theme)
 			processpandoc.processBlock(block, pandoc)
-			print(pandoc.genOutput())
+		print(pandoc.genOutput())
 
 
 @Cli2Gui(run_function=handle)
