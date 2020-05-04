@@ -1,5 +1,5 @@
 [![Github top language](https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
-[![Codacy grade](https://img.shields.io/codacy/grade/1c358281efb2419d9ed3410609be013f.svg?style=for-the-badge)](https://www.codacy.com/manual/FHPythonUtils/CatPandoc)
+[![Codacy grade](https://img.shields.io/codacy/grade/1c358281efb2419d9ed3410609be013f.svg?style=for-the-badge)](https://www.codacy.com/gh/FHPythonUtils/CatPandoc)
 [![Repository size](https://img.shields.io/github/repo-size/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../issues)
 [![License](https://img.shields.io/github/license/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](/LICENSE.md)
