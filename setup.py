@@ -21,7 +21,7 @@ if os.path.exists(readme_path):
 setup(
     long_description=readme,
     name='catpandoc',
-    version='2020.2',
+    version='2020.2.1',
     description='Cat multiple document files to the terminal',
     python_requires='==3.*,>=3.5.0',
     project_urls={
@@ -34,11 +34,19 @@ setup(
     },
     author='FredHappyface',
     classifiers=[
+        'Environment :: Console', 'Development Status :: 5 - Production/Stable',
+        'Intended Audience :: Developers', 'Intended Audience :: Education',
+        'License :: OSI Approved :: MIT License', 'Natural Language :: English',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
-        'Operating System :: OS Independent'
+        'Programming Language :: Python :: Implementation :: CPython',
+        'Topic :: Text Processing',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Utilities'
     ],
     entry_points={"console_scripts": [
         "catpandoc = catpandoc.application:cli"]},
