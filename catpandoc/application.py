@@ -1,33 +1,32 @@
 """CLI Application
 Cat a pandoc json string
 """
+from __future__ import annotations
+from sys import stdout
 
 import json
 import argparse
-import platform
-import ctypes
-from cli2gui import Cli2Gui
 import pypandoc
+
 from catpandoc import pandoc2plain, pandoc2ansi, processpandoc
 
+stdout.reconfigure(encoding="utf-8") # type: ignore
 
-def handle(args):
+
+def handle(args: argparse.Namespace):
 	"""Handle the args and output to the terminal
 
 	Args:
 		args (argparse.Namespace): Args
 	"""
-	# Fix terminal for windows
-	if platform.system() == "Windows":
-		kernel32 = ctypes.windll.kernel32
-		kernel32.SetConsoleMode(kernel32.GetStdHandle(-11), 7)
+
 
 	# Open file and convert to JSON
 	try:
-		pypandoc.convert_text("#test", "json", format='md')
+		pypandoc.convert_text("#test", "json", format='md') # type: ignore
 	except (FileNotFoundError, OSError):
-		pypandoc.download_pandoc()
-	output = json.loads(pypandoc.convert_file(args.file, 'json'))
+		pypandoc.download_pandoc() # type: ignore
+	output = json.loads(pypandoc.convert_file(args.file, 'json')) # type: ignore
 
 	# Process args
 	width = 80
@@ -38,7 +37,11 @@ def handle(args):
 		padding = int(args.padding)
 	theme = (4, 0, 4)
 	if args.theme is not None:
-		theme = tuple([int(col) for col in args.theme.split(",")])
+		try:
+			themeList = [int(col) for col in args.theme.split(",")]
+			theme: tuple[int, int, int] = tuple(themeList)[:3] # type: ignore
+		except (IndexError, ValueError):
+			theme = (4, 0, 4)
 
 	# Print to console
 	if args.to_plain:
@@ -53,8 +56,7 @@ def handle(args):
 		print(pandoc.genOutput())
 
 
-@Cli2Gui(run_function=handle)
-def cli():
+def cli() -> None:
 	"""Parse args from the command line
 	"""
 	parser = argparse.ArgumentParser(description="Print md")

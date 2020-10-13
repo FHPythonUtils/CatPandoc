@@ -40,15 +40,19 @@ Inline
 
 
 """
+from __future__ import annotations
 
 import re
 import emoji
 
-def toPlaintext(inline):
+from catpandoc import pandoc2xyz
+from catpandoc.types import Inline, Block
+
+def toPlaintext(inline: Inline) -> str:
 	"""Convert an inline or block to plain text
 
 	Args:
-		inline (dict): An inline holds various types such as 'Space', 'Bold'
+		inline (Inline): An inline holds various types such as 'Space', 'Bold'
 		and other Inlines
 
 	Returns:
@@ -86,15 +90,16 @@ def toPlaintext(inline):
 	if inline["t"] == "RawInline":
 		return inline["c"][1]
 	print(inline)
+	raise RuntimeError
 
 
 
-def processRaw(content, pandoc2):
+def processRaw(content: tuple[str, str], pandoc2: pandoc2xyz.Pandoc2XYZ):
 	"""Process raw data - this might be html
 
 	Args:
-		content ([string, string]): content type and content data
-		pandoc2 (object): pandoc2XYZ object formatter
+		content (tuple[str, str]): content type and content data
+		pandoc2 (pandoc2xyz.Pandoc2XYZ): pandoc2XYZ object formatter
 	"""
 	if content[0] in ["html"]:
 		if content[1].startswith("<img"):
@@ -106,13 +111,13 @@ def processRaw(content, pandoc2):
 	else:
 		pandoc2.print(content)
 
-def processInline(inline, pandoc2):
+def processInline(inline: Inline, pandoc2: pandoc2xyz.Pandoc2XYZ):
 	"""Do stuff for an inline object
 
 	Args:
-		inline (dict): An inline holds various types such as 'Space', 'Bold'
+		inline (Inline): An inline holds various types such as 'Space', 'Bold'
 		and other Inlines
-		pandoc2 (object): pandoc2XYZ object formatter
+		pandoc2 (pandoc2xyz.Pandoc2XYZ): pandoc2XYZ object formatter
 	"""
 	if inline["t"] == "Str":
 		# text
@@ -140,7 +145,9 @@ def processInline(inline, pandoc2):
 		pandoc2.quoted(inline["c"])
 	if inline["t"] == "Cite":
 		# citation[], inline[]
-		pandoc2.cite(inline["c"])
+		#TODO
+		#pandoc2.cite(inline["c"])
+		pass
 	if inline["t"] == "Code":
 		# attributes, text
 		pandoc2.code(inline["c"])
@@ -169,12 +176,12 @@ def processInline(inline, pandoc2):
 		# attr, inline[]
 		pandoc2.span(inline["c"])
 
-def processBlock(block, pandoc2):
+def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
 	"""Do stuff for an block object
 
 	Args:
-		block (dict): An block holds various types such as 'Para', 'Table'
-		pandoc2 (object): pandoc2XYZ object formatter
+		block (Block): An block holds various types such as 'Para', 'Table'
+		pandoc2 (pandoc2xyz.Pandoc2XYZ): pandoc2XYZ object formatter
 	"""
 	if block["t"] == "Plain":
 		# inline[]
@@ -186,7 +193,9 @@ def processBlock(block, pandoc2):
 			processInline(inline, pandoc2)
 	if block["t"] == "LineBlock":
 		# inline[][]
-		pandoc2.lineBlock(block["c"])
+		#TODO
+		#pandoc2.lineBlock(block["c"])
+		pass
 	if block["t"] == "CodeBlock":
 		# language, text
 		pandoc2.codeBlock(block["c"])

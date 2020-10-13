@@ -1,7 +1,6 @@
 ignore/
 README.rst
-# DOCS generator cannot deal with any utf-8 :(
-DOCS.md
+requirements_optional.txt
 
 poetry.lock
 
