@@ -1,6 +1,8 @@
 ignore/
 README.rst
 requirements_optional.txt
+dowloadedImage
+test.json
 
 poetry.lock
 

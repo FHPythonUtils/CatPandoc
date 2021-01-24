@@ -115,7 +115,7 @@ class Pandoc2Ansi(Pandoc2Plain):
 			CLR_FG + str(
 			pygments.highlight(line, get_lexer_by_name(content[0][1][0]), # type: ignore
 			Terminal256Formatter())) + CLR for line in content[1].split("\n")])) # type: ignore
-		except IndexError:
+		except (IndexError, pygments.util.ClassNotFound):
 			self.print(FG + codeColour + "\n │ ".join(content[1].split("\n")) + CLR_FG)
 
 	def definitionList(self, content: list[tuple[list[Inline], list[list[Block]]]]):

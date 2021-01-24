@@ -127,7 +127,7 @@ class Pandoc2Plain(pandoc2xyz.Pandoc2XYZ):
 				processpandoc.processBlock(point, self)
 
 	def table(self, content: tuple[Any, Caption, list[list[Alignment]],
-	TableHead, list[TableBody]]):
+	tuple[Any, tuple[tuple[Any, tuple[Any, Any, Any, Any, list[TableHead]]]]], tuple[Any, Any, Any, Any, tuple[tuple[Any, Any, Any, TableBody]]]]):
 		'''Process a table '''
 		# Any, Caption, list[list[Alignment]], TableHead, list[TableBody]
 		# ignore, ignore, align, tableHead, tableBody
@@ -136,20 +136,20 @@ class Pandoc2Plain(pandoc2xyz.Pandoc2XYZ):
 		"AlignCenter": "{:^"+colWidth+"."+colWidth+"}",
 		"AlignRight": "{:>"+colWidth+"."+colWidth+"}",
 		"AlignDefault": "{:<"+colWidth+"."+colWidth+"}"}
-		self.print()
+		self.print("\n")
 		self.print("│", end="")
-		for index, tableHead in enumerate(content[3]["c"][1][0]["c"][1]):
-			headContent = "".join([processpandoc.toPlaintext(headPart) for headPart in tableHead["c"][4]])
+		for index, tableHead in enumerate(content[3][1][0][1]):
+			headContent = "".join([processpandoc.toPlaintext(headPart) for headPart in tableHead[4]])
 			self.print((alignment[content[2][index][0]["t"]]).format(headContent) + "│", end="")
 		self.print("\n│", end="")
 		for index, _ in enumerate(content[2]):
 			self.print((alignment[content[2][index][0]["t"]]).format("─"*self.width) + "┤", end="")
-		for tableRow in content[4][0]["c"][3]:
+		for tableRow in content[4][0][3]:
 			self.print("\n│", end="")
-			for index, tableCol in enumerate(tableRow["c"][1]):
-				colContent = "".join([processpandoc.toPlaintext(colPart) for colPart in tableCol["c"][4]])
+			for index, tableCol in enumerate(tableRow[1]):
+				colContent = "".join([processpandoc.toPlaintext(colPart) for colPart in tableCol[4]])
 				self.print((alignment[content[2][index][0]["t"]]).format(colContent) + "│", end="")
-		self.print()
+		self.print("\n")
 
 
 	def blockQuote(self, content: list[Block]):
