@@ -1,12 +1,12 @@
-[![Github top language](https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
-[![Codacy grade](https://img.shields.io/codacy/grade/1c358281efb2419d9ed3410609be013f.svg?style=for-the-badge)](https://www.codacy.com/gh/FHPythonUtils/CatPandoc)
+[![GitHub top language](https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
 [![Repository size](https://img.shields.io/github/repo-size/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
 [![Issues](https://img.shields.io/github/issues/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../issues)
 [![License](https://img.shields.io/github/license/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](/LICENSE.md)
 [![Commit activity](https://img.shields.io/github/commit-activity/m/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../commits/master)
 [![Last commit](https://img.shields.io/github/last-commit/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../commits/master)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/catpandoc.svg?style=for-the-badge)](https://pypi.org/project/catpandoc/)
-[![PyPI Version](https://img.shields.io/pypi/v/catpandoc.svg?style=for-the-badge)](https://pypi.org/project/catpandoc/)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/catpandoc.svg?style=for-the-badge)](https://pypistats.org/packages/catpandoc)
+[![PyPI Total Downloads](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=total%20downloads&query=%24.total_downloads&url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fprojects%2Fcatpandoc)](https://pepy.tech/project/catpandoc)
+[![PyPI Version](https://img.shields.io/pypi/v/catpandoc.svg?style=for-the-badge)](https://pypi.org/project/catpandoc)
 
 <!-- omit in toc -->
 # CatPandoc
@@ -19,10 +19,11 @@ Cat multiple documents to the terminal. The continuation of CatMD
 	- [Document Compatability](#document-compatability)
 	- [Terminal 'rendering'](#terminal-rendering)
 - [Roadmap](#roadmap)
-- [Install With PIP](#install-with-pip)
 - [Use](#use)
 	- [CLI](#cli)
 	- [Import](#import)
+- [Documentation](#documentation)
+- [Install With PIP](#install-with-pip)
 - [Language information](#language-information)
 	- [Built for](#built-for)
 - [Install Python on Windows](#install-python-on-windows)
@@ -33,8 +34,7 @@ Cat multiple documents to the terminal. The continuation of CatMD
 - [How to run](#how-to-run)
 	- [With VSCode](#with-vscode)
 	- [From the Terminal](#from-the-terminal)
-- [How to update, build and publish](#how-to-update-build-and-publish)
-- [Download](#download-1)
+- [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
 		- [Using GitHub Desktop](#using-github-desktop)
@@ -45,6 +45,8 @@ Cat multiple documents to the terminal. The continuation of CatMD
 	- [Code of Conduct](#code-of-conduct)
 	- [Contributing](#contributing)
 	- [Security](#security)
+	- [Support](#support)
+	- [Rationale](#rationale)
 - [Screenshots](#screenshots)
 	- [Desktop](#desktop)
 	- [Themes](#themes)
@@ -124,14 +126,6 @@ For completed components, see the changelog (link below)
 |---|---|---|
 |pandoc2pysimplegui.py|Generate PySimpleGUI widgets|-|
 
-## Install With PIP
-
-```python
-pip install catpandoc
-```
-
-Head to https://pypi.org/project/catpandoc/ for more info
-
 
 ## Use
 
@@ -154,6 +148,21 @@ for block in output["blocks"]:
 	processpandoc.processBlock(block, pandoc)
 	print(pandoc.genOutput())
 ```
+
+
+
+## Documentation
+See the [Docs](/DOCS/README.md) for more information.
+
+
+
+## Install With PIP
+
+```python
+pip install catpandoc
+```
+
+Head to https://pypi.org/project/catpandoc/ for more info
 
 
 ## Language information
@@ -187,36 +196,8 @@ Interpreter > Python 3.9)
 ./[file].py
 ```
 
-## How to update, build and publish
 
-1. Ensure you have installed the following dependencies
-	Linux
-	```bash
-	wget dephell.org/install | python3.9
-	wget https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python3.9
-	```
-	Windows
-	```powershell
-	(wget dephell.org/install -UseBasicParsing).Content | python
-	(wget https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py -UseBasicParsing).Content | python
-	```
-2. Use poetry for the heavy lifting and dephell to generate requirements
-	```bash
-	poetry update
-	dephell deps convert
-	```
-3. Build/ Publish
-	```bash
-	poetry build
-	poetry publish
-	```
-	or
-	```bash
-	poetry publish --build
-	```
-
-
-## Download
+## Download Project
 ### Clone
 #### Using The Command Line
 1. Press the Clone or download button in the top right
@@ -255,17 +236,34 @@ Copyright (c) FredHappyface
 See the [Changelog](/CHANGELOG.md) for more information.
 
 ### Code of Conduct
-In the interest of fostering an open and welcoming environment, we
-as contributors and maintainers pledge to make participation in our
-project and our community a harassment-free experience for everyone.
-Please see the
-[Code of Conduct](https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md) for more information.
+Online communities include people from many backgrounds. The *Project*
+contributors are committed to providing a friendly, safe and welcoming
+environment for all. Please see the
+[Code of Conduct](https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md)
+ for more information.
 
 ### Contributing
-Contributions are welcome, please see the [Contributing Guidelines](https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md) for more information.
+Contributions are welcome, please see the
+[Contributing Guidelines](https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md)
+for more information.
 
 ### Security
-Thank you for improving the security of the project, please see the [Security Policy](https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md) for more information.
+Thank you for improving the security of the project, please see the
+[Security Policy](https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md)
+for more information.
+
+### Support
+Thank you for using this project, I hope it is of use to you. Please be aware that
+those involved with the project often do so for fun along with other commitments
+(such as work, family, etc). Please see the
+[Support Policy](https://github.com/FHPythonUtils/.github/blob/master/SUPPORT.md)
+for more information.
+
+### Rationale
+The rationale acts as a guide to various processes regarding projects such as
+the versioning scheme and the programming styles used. Please see the
+[Rationale](https://github.com/FHPythonUtils/.github/blob/master/RATIONALE.md)
+for more information.
 
 ## Screenshots
 
