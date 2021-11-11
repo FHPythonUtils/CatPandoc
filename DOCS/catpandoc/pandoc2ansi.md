@@ -47,7 +47,7 @@ for identical methods - down with code duplication...)
 
 ### Pandoc2Ansi().ansiFromAnsiRgb
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L231)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L263)
 
 ```python
 def ansiFromAnsiRgb(colour: tuple[(int, int, int)]) -> str:
@@ -57,7 +57,7 @@ Generates ansi based on reduced rgb ie in range 0-5
 
 ### Pandoc2Ansi().blockQuote
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L165)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L188)
 
 ```python
 def blockQuote(content: list[Block]):
@@ -67,7 +67,7 @@ Process a block quote
 
 ### Pandoc2Ansi().bulletList
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L149)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L174)
 
 ```python
 def bulletList(content: list[list[Block]]):
@@ -77,7 +77,7 @@ Process a bulleted list
 
 ### Pandoc2Ansi().catImage
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L43)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L45)
 
 ```python
 def catImage(content: str):
@@ -87,7 +87,7 @@ catImage
 
 ### Pandoc2Ansi().code
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L209)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L234)
 
 ```python
 def code(content: tuple[(Any, str)]):
@@ -97,7 +97,7 @@ Process code
 
 ### Pandoc2Ansi().codeBlock
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L108)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L122)
 
 ```python
 def codeBlock(content: tuple[(Any, str)]):
@@ -107,7 +107,7 @@ Process a code block
 
 ### Pandoc2Ansi().definitionList
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L121)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L148)
 
 ```python
 def definitionList(content: list[tuple[(list[Inline], list[list[Block]])]]):
@@ -117,7 +117,7 @@ Process a definition list
 
 ### Pandoc2Ansi().emph
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L180)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L205)
 
 ```python
 def emph(content: list[Inline]):
@@ -127,7 +127,7 @@ Process emphasized text
 
 ### Pandoc2Ansi().header
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L63)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L64)
 
 ```python
 def header(content: tuple[(int, Any, list[Inline])]):
@@ -137,7 +137,7 @@ Process a header
 
 ### Pandoc2Ansi().hr
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L225)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L254)
 
 ```python
 def hr():
@@ -147,7 +147,7 @@ Process a hr
 
 ### Pandoc2Ansi().orderedList
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L136)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L163)
 
 ```python
 def orderedList(content: list[tuple[(list[Any], list[Block])]]):
@@ -157,7 +157,7 @@ Process an ordered list
 
 ### Pandoc2Ansi().strikeout
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L194)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L219)
 
 ```python
 def strikeout(content: list[Inline]):
@@ -167,7 +167,7 @@ Process strikeout (crossed out) text
 
 ### Pandoc2Ansi().strong
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L187)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L212)
 
 ```python
 def strong(content: list[Inline]):
@@ -177,7 +177,7 @@ Process strong (bold) text
 
 ### Pandoc2Ansi().varBaseC
 
-[[find in source code]](../../catpandoc/pandoc2ansi.py#L238)
+[[find in source code]](../../catpandoc/pandoc2ansi.py#L275)
 
 ```python
 def varBaseC(

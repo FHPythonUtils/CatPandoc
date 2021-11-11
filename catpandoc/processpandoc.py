@@ -43,10 +43,12 @@ Inline
 from __future__ import annotations
 
 import re
+
 import emoji
 
 from catpandoc import pandoc2xyz
-from catpandoc.types import Inline, Block
+from catpandoc.types import Block, Inline
+
 
 def toPlaintext(inline: Inline) -> str:
 	"""Convert an inline or block to plain text
@@ -73,7 +75,7 @@ def toPlaintext(inline: Inline) -> str:
 		# quotetype, inline[]
 		text = []
 		for newInline in inline["c"][1]:
-			text.append("\'" + toPlaintext(newInline) + "\'")
+			text.append("'" + toPlaintext(newInline) + "'")
 		return "".join(text)
 	if inline["t"] == "Code":
 		return " │" + inline["c"][1] + " │ "
@@ -93,7 +95,6 @@ def toPlaintext(inline: Inline) -> str:
 	raise RuntimeError
 
 
-
 def processRaw(content: tuple[str, str], pandoc2: pandoc2xyz.Pandoc2XYZ):
 	"""Process raw data - this might be html
 
@@ -110,6 +111,7 @@ def processRaw(content: tuple[str, str], pandoc2: pandoc2xyz.Pandoc2XYZ):
 			pandoc2.print(content)
 	else:
 		pandoc2.print(content)
+
 
 def processInline(inline: Inline, pandoc2: pandoc2xyz.Pandoc2XYZ):
 	"""Do stuff for an inline object
@@ -145,8 +147,8 @@ def processInline(inline: Inline, pandoc2: pandoc2xyz.Pandoc2XYZ):
 		pandoc2.quoted(inline["c"])
 	if inline["t"] == "Cite":
 		# citation[], inline[]
-		#TODO
-		#pandoc2.cite(inline["c"])
+		# TODO
+		# pandoc2.cite(inline["c"])
 		pass
 	if inline["t"] == "Code":
 		# attributes, text
@@ -176,6 +178,7 @@ def processInline(inline: Inline, pandoc2: pandoc2xyz.Pandoc2XYZ):
 		# attr, inline[]
 		pandoc2.span(inline["c"])
 
+
 def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
 	"""Do stuff for an block object
 
@@ -193,8 +196,8 @@ def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
 			processInline(inline, pandoc2)
 	if block["t"] == "LineBlock":
 		# inline[][]
-		#TODO
-		#pandoc2.lineBlock(block["c"])
+		# TODO
+		# pandoc2.lineBlock(block["c"])
 		pass
 	if block["t"] == "CodeBlock":
 		# language, text

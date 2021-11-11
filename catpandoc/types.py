@@ -40,22 +40,27 @@ Inline
 """
 
 from __future__ import annotations
-from typing import TypedDict, Any
+
+from typing import Any, TypedDict
 
 
 class Inline(TypedDict):
-	''' Inline '''
+	"""Inline"""
+
 	t: str
 	c: Any
 
 
 class Block(TypedDict):
-	''' Block '''
+	"""Block"""
+
 	t: str
 	c: Any
 
+
 class Content(TypedDict):
-	''' Content '''
+	"""Content"""
+
 	t: str
 	c: Any
 
@@ -64,16 +69,20 @@ class Caption(TypedDict):
 	t: str
 	c: list[Any]
 
+
 class Alignment(TypedDict):
 	t: str
+
 
 class Cell(TypedDict):
 	t: str
 	c: tuple[Any, dict[str, str], dict[str, str], dict[str, str], list[Inline]]
 
+
 class Row(TypedDict):
 	t: str
 	c: tuple[Any, list[Cell]]
+
 
 class TableHead(TypedDict):
 	t: str

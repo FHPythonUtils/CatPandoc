@@ -2,15 +2,16 @@
 Cat a pandoc json string
 """
 from __future__ import annotations
+
+import argparse
+import json
 from sys import stdout
 
-import json
-import argparse
 import pypandoc
 
-from catpandoc import pandoc2plain, pandoc2ansi, processpandoc
+from catpandoc import pandoc2ansi, pandoc2plain, processpandoc
 
-stdout.reconfigure(encoding="utf-8") # type: ignore
+stdout.reconfigure(encoding="utf-8")  # type: ignore
 
 
 def handle(args: argparse.Namespace):
@@ -20,13 +21,12 @@ def handle(args: argparse.Namespace):
 		args (argparse.Namespace): Args
 	"""
 
-
 	# Open file and convert to JSON
 	try:
-		pypandoc.convert_text("#test", "json", format='md') # type: ignore
+		pypandoc.convert_text("#test", "json", format="md")  # type: ignore
 	except (FileNotFoundError, OSError):
-		pypandoc.download_pandoc() # type: ignore
-	output = json.loads(pypandoc.convert_file(args.file, 'json')) # type: ignore
+		pypandoc.download_pandoc()  # type: ignore
+	output = json.loads(pypandoc.convert_file(args.file, "json"))  # type: ignore
 
 	# Process args
 	width = 80
@@ -39,7 +39,7 @@ def handle(args: argparse.Namespace):
 	if args.theme is not None:
 		try:
 			themeList = [int(col) for col in args.theme.split(",")]
-			theme: tuple[int, int, int] = tuple(themeList)[:3] # type: ignore
+			theme: tuple[int, int, int] = tuple(themeList)[:3]  # type: ignore
 		except (IndexError, ValueError):
 			theme = (4, 0, 4)
 
@@ -57,8 +57,7 @@ def handle(args: argparse.Namespace):
 
 
 def cli() -> None:
-	"""Parse args from the command line
-	"""
+	"""Parse args from the command line"""
 	parser = argparse.ArgumentParser(description="Print md")
 	parser.add_argument("file", help="file to render")
 	parser.add_argument("--width", help="terminal width", action="store")
@@ -68,6 +67,7 @@ def cli() -> None:
 	parser.add_argument("--to-plain", help="convert to plaintext", action="store_true")
 	args = parser.parse_args()
 	handle(args)
+
 
 if __name__ == "__main__":
 	cli()

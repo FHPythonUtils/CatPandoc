@@ -35,7 +35,7 @@ Convert a pandoc string to plaintext
 
 ## Pandoc2XYZ
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L7)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L10)
 
 ```python
 class Pandoc2XYZ():
@@ -46,7 +46,7 @@ Dummy for typing
 
 ### Pandoc2XYZ().blockQuote
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L58)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L59)
 
 ```python
 def blockQuote(content: list[Block]):
@@ -66,7 +66,7 @@ Process a bulleted list
 
 ### Pandoc2XYZ().catImage
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L20)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L23)
 
 ```python
 def catImage(content: str):
@@ -76,7 +76,7 @@ catImage
 
 ### Pandoc2XYZ().code
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L93)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L90)
 
 ```python
 def code(content: tuple[(Any, str)]):
@@ -116,7 +116,7 @@ Process emphasized text
 
 ### Pandoc2XYZ().genOutput
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L29)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L30)
 
 ```python
 def genOutput() -> str:
@@ -136,7 +136,7 @@ Process a header
 
 ### Pandoc2XYZ().hr
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L114)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L108)
 
 ```python
 def hr():
@@ -146,7 +146,7 @@ Process a hr
 
 ### Pandoc2XYZ().image
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L108)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L102)
 
 ```python
 def image(content: tuple[(Any, Any, tuple[(str, str)])]):
@@ -156,7 +156,7 @@ Process an image
 
 ### Pandoc2XYZ().link
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L111)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L105)
 
 ```python
 def link(content: tuple[(Any, list[Inline], tuple[(str, str)])]):
@@ -166,7 +166,7 @@ Process a link
 
 ### Pandoc2XYZ().math
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L96)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L93)
 
 ```python
 def math(content: tuple[(Any, str)]):
@@ -176,7 +176,7 @@ Process math
 
 ### Pandoc2XYZ().newline
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L17)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L20)
 
 ```python
 def newline():
@@ -186,7 +186,7 @@ newline
 
 ### Pandoc2XYZ().note
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L100)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L96)
 
 ```python
 def note(content: list[Block]):
@@ -206,7 +206,7 @@ Process an ordered list
 
 ### Pandoc2XYZ().print
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L25)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L26)
 
 ```python
 def print(end: str = '\n', *args: object) -> None:
@@ -217,7 +217,7 @@ to the inbuilt print method
 
 ### Pandoc2XYZ().quoted
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L90)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L87)
 
 ```python
 def quoted(content: tuple[(Any, list[Inline])]):
@@ -227,7 +227,7 @@ Process quoted text
 
 ### Pandoc2XYZ().smallCaps
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L87)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L84)
 
 ```python
 def smallCaps(content: list[Inline]):
@@ -247,7 +247,7 @@ Process a space
 
 ### Pandoc2XYZ().span
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L104)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L99)
 
 ```python
 def span(content: tuple[(Any, list[Inline])]):
@@ -257,7 +257,7 @@ Process a span
 
 ### Pandoc2XYZ().strikeout
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L77)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L75)
 
 ```python
 def strikeout(content: list[Inline]):
@@ -267,7 +267,7 @@ Process strikeout (crossed out) text
 
 ### Pandoc2XYZ().strong
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L73)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L72)
 
 ```python
 def strong(content: list[Inline]):
@@ -277,7 +277,7 @@ Process strong (bold) text
 
 ### Pandoc2XYZ().subscript
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L84)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L81)
 
 ```python
 def subscript(content: list[Inline]):
@@ -287,7 +287,7 @@ Process subscript text
 
 ### Pandoc2XYZ().superscript
 
-[[find in source code]](../../catpandoc/pandoc2xyz.py#L81)
+[[find in source code]](../../catpandoc/pandoc2xyz.py#L78)
 
 ```python
 def superscript(content: list[Inline]):

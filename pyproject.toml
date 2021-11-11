@@ -1,6 +1,7 @@
 [tool.poetry]
 name = "catpandoc"
-version = "2021"
+version = "2021.0.1"
+license = "mit"
 description = "Cat multiple document files to the terminal"
 authors = ["FredHappyface"]
 classifiers = [
@@ -8,13 +9,8 @@ classifiers = [
 	"Development Status :: 5 - Production/Stable",
 	"Intended Audience :: Developers",
 	"Intended Audience :: Education",
-	"License :: OSI Approved :: MIT License",
 	"Natural Language :: English",
 	"Operating System :: OS Independent",
-	"Programming Language :: Python :: 3",
-	"Programming Language :: Python :: 3.7",
-	"Programming Language :: Python :: 3.8",
-	"Programming Language :: Python :: 3.9",
 	"Programming Language :: Python :: Implementation :: CPython",
 	"Topic :: Text Processing",
 	"Topic :: Software Development :: Libraries :: Python Modules",
@@ -30,14 +26,45 @@ catpandoc = 'catpandoc.application:cli'
 
 [tool.poetry.dependencies]
 python = "^3.7"
-art = "<7,>=5.1"
-emoji = "<3,>=1.1.0"
-pypandoc = "<3,>=1.5"
-catimage = "<2022,>=2020.6.2"
-Pygments = "<4,>=2.7.4"
+art = "<6,>=5.3"
+emoji = "<2,>=1.6.1"
+pypandoc = "<2,>=1.6.4"
+catimage = "<2023,>=2021"
+Pygments = "<3,>=2.10.0"
 
+[tool.pylint.basic]
+argument-naming-style = "camelCase"
+attr-naming-style = "camelCase"
+function-naming-style = "camelCase"
+method-naming-style = "camelCase"
+variable-naming-style = "camelCase"
 
+[tool.pylint.format]
+indent-string = "\t"
+
+[tool.pylint.master]
+ignore-patterns = "test_.*?py"
+
+[tool.pylint.messages_control]
+enable = ["F", "E", "W", "R", "C"]
+disable = [
+	"pointless-string-statement",
+	"superfluous-parens",
+	"bad-continuation"
+]
+
+[tool.black]
+line-length = 100
+target-version = ["py37"]
+
+[tool.isort]
+profile = "black"
+indent = "Tab"
+
+[tool.pydocstyle]
+convention = "google"
+ignore = "D205,D415"
 
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -54,7 +54,7 @@ Inline
 
 ## Alignment
 
-[[find in source code]](../../catpandoc/types.py#L67)
+[[find in source code]](../../catpandoc/types.py#L73)
 
 ```python
 class Alignment(TypedDict):
@@ -62,7 +62,7 @@ class Alignment(TypedDict):
 
 ## Block
 
-[[find in source code]](../../catpandoc/types.py#L52)
+[[find in source code]](../../catpandoc/types.py#L54)
 
 ```python
 class Block(TypedDict):
@@ -72,7 +72,7 @@ Block
 
 ## Caption
 
-[[find in source code]](../../catpandoc/types.py#L63)
+[[find in source code]](../../catpandoc/types.py#L68)
 
 ```python
 class Caption(TypedDict):
@@ -80,7 +80,7 @@ class Caption(TypedDict):
 
 ## Cell
 
-[[find in source code]](../../catpandoc/types.py#L70)
+[[find in source code]](../../catpandoc/types.py#L77)
 
 ```python
 class Cell(TypedDict):
@@ -88,7 +88,7 @@ class Cell(TypedDict):
 
 ## Content
 
-[[find in source code]](../../catpandoc/types.py#L57)
+[[find in source code]](../../catpandoc/types.py#L61)
 
 ```python
 class Content(TypedDict):
@@ -98,7 +98,7 @@ Content
 
 ## Inline
 
-[[find in source code]](../../catpandoc/types.py#L46)
+[[find in source code]](../../catpandoc/types.py#L47)
 
 ```python
 class Inline(TypedDict):
@@ -108,7 +108,7 @@ Inline
 
 ## Row
 
-[[find in source code]](../../catpandoc/types.py#L74)
+[[find in source code]](../../catpandoc/types.py#L82)
 
 ```python
 class Row(TypedDict):
@@ -116,7 +116,7 @@ class Row(TypedDict):
 
 ## TableBody
 
-[[find in source code]](../../catpandoc/types.py#L83)
+[[find in source code]](../../catpandoc/types.py#L92)
 
 ```python
 class TableBody(TypedDict):
@@ -124,7 +124,7 @@ class TableBody(TypedDict):
 
 ## TableHead
 
-[[find in source code]](../../catpandoc/types.py#L78)
+[[find in source code]](../../catpandoc/types.py#L87)
 
 ```python
 class TableHead(TypedDict):

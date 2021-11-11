@@ -21,7 +21,7 @@ Parse args from the command line
 
 ## handle
 
-[[find in source code]](../../catpandoc/application.py#L16)
+[[find in source code]](../../catpandoc/application.py#L17)
 
 ```python
 def handle(args: argparse.Namespace):

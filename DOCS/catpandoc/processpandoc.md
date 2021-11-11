@@ -49,7 +49,7 @@ Inline
 
 ## processBlock
 
-[[find in source code]](../../catpandoc/processpandoc.py#L179)
+[[find in source code]](../../catpandoc/processpandoc.py#L182)
 
 ```python
 def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
@@ -68,7 +68,7 @@ Do stuff for an block object
 
 ## processInline
 
-[[find in source code]](../../catpandoc/processpandoc.py#L114)
+[[find in source code]](../../catpandoc/processpandoc.py#L116)
 
 ```python
 def processInline(inline: Inline, pandoc2: pandoc2xyz.Pandoc2XYZ):
@@ -88,7 +88,7 @@ and other Inlines
 
 ## processRaw
 
-[[find in source code]](../../catpandoc/processpandoc.py#L97)
+[[find in source code]](../../catpandoc/processpandoc.py#L98)
 
 ```python
 def processRaw(content: tuple[(str, str)], pandoc2: pandoc2xyz.Pandoc2XYZ):
@@ -103,7 +103,7 @@ content (tuple[str, str]): content type and content data
 
 ## toPlaintext
 
-[[find in source code]](../../catpandoc/processpandoc.py#L51)
+[[find in source code]](../../catpandoc/processpandoc.py#L53)
 
 ```python
 def toPlaintext(inline: Inline) -> str:
