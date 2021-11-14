@@ -1,6 +1,8 @@
 """Call functions in catpandoc to output cli2gui.md with an increased width
 and "fancy" theme
 """
+from __future__ import annotations
+
 import sys
 from pathlib import Path
 
