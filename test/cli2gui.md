@@ -56,20 +56,20 @@ based off documentation/ the readme
 
 |Argparser|Cli2Gui|Gooey|Quick|
 |---|---|---|---|
-|Argparse|:heavy_check_mark:|:heavy_check_mark:|X|
-|Optparse|:heavy_check_mark:|X|X|
-|DocOpt|:heavy_check_mark:|X|X|
-|Click|X \[Planned\]|X|:heavy_check_mark:|
-|GetOpt|:heavy_check_mark:|X|X|
+|Argparse|✔                |✔                |X|
+|Optparse|✔                |X|X|
+|DocOpt|✔                |X|X|
+|Click|X \[Planned\]|X|✔                |
+|GetOpt|✔                |X|X|
 
 |Basic GUI|Cli2Gui|Gooey|Quick|
 |---|---|---|---|
-|Override name/ description|:heavy_check_mark:|:heavy_check_mark:|?|
-|Theming|:heavy_check_mark:|Limited|?|
-|DarkMode|:heavy_check_mark:|X|:heavy_check_mark:|
-|Window Size|:heavy_check_mark:|:heavy_check_mark:|X|
-|Element Size|:heavy_check_mark:|X|X|
-|Custom Images|:heavy_check_mark:|:heavy_check_mark:|?|
+|Override name/ description|✔                |✔                |?|
+|Theming|✔                |Limited|?|
+|DarkMode|✔                |X|✔                |
+|Window Size|✔                |✔                |X|
+|Element Size|✔                |X|X|
+|Custom Images|✔                |✔                |?|
 
 Cli2Gui is pretty lacking in these features and will probably remain that way
 to ease maintainability - the primary aim is to support multiple argparse
@@ -77,11 +77,11 @@ libraries over fancy widgets
 
 |Advanced GUI|Cli2Gui|Gooey|Quick|
 |---|---|---|---|
-|Dropdown|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
-|Slider|X|:heavy_check_mark:|:heavy_check_mark:|
-|Tabs|X|:heavy_check_mark:|:heavy_check_mark:|
-|Menus|X|:heavy_check_mark:|X|
-|Max Args before Scroll|:heavy_check_mark:|X|X|
+|Dropdown|✔                |✔                |✔                |
+|Slider|X|✔                |✔                |
+|Tabs|X|✔                |✔                |
+|Menus|X|✔                |X|
+|Max Args before Scroll|✔                |X|X|
 
 ## Roadmap
 For completed components, see the changelog (link below)
