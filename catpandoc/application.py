@@ -4,15 +4,26 @@ Cat a pandoc json string
 from __future__ import annotations
 
 import argparse
-import json
-import shutil
-from sys import stdout
 
 import pypandoc
+from rich.console import Console
+from rich.markdown import Markdown
 
-from catpandoc import pandoc2ansi, pandoc2plain, processpandoc
 
-stdout.reconfigure(encoding="utf-8")  # type: ignore
+def pandoc2ansi(file: str, width: int) -> str:
+	console = Console(width=width)
+	markdown = Markdown(pypandoc.convert_file(file, "md"))
+	with console.capture() as capture:
+		console.print(markdown)
+	return capture.get()
+
+
+def pandoc2plain(file: str, width: int) -> str:
+	console = Console(color_system=None, width=width)
+	markdown = Markdown(pypandoc.convert_file(file, "md"))
+	with console.capture() as capture:
+		console.print(markdown)
+	return capture.get()
 
 
 def handle(args: argparse.Namespace):
@@ -27,44 +38,17 @@ def handle(args: argparse.Namespace):
 		pypandoc.convert_text("#test", "json", format="md")  # type: ignore
 	except OSError:
 		pypandoc.download_pandoc()  # type: ignore
-	output = json.loads(pypandoc.convert_file(args.file, "json"))  # type: ignore
-
-	# Process args
-	width = shutil.get_terminal_size()[0]
-	padding = 0
-	if args.width is not None:
-		width = int(args.width)
-	if args.padding is not None:
-		padding = int(args.padding)
-	theme = (4, 0, 4)
-	if args.theme is not None:
-		try:
-			themeList = [int(col) for col in args.theme.split(",")]
-			theme: tuple[int, int, int] = tuple(themeList)[:3]  # type: ignore
-		except (IndexError, ValueError):
-			theme = (4, 0, 4)
 
 	# Print to console
-	if args.to_plain:
-		pandoc = pandoc2plain.Pandoc2Plain(width, padding)
-		for block in output["blocks"]:
-			processpandoc.processBlock(block, pandoc)
-		print(pandoc.genOutput())
-	else:
-		pandoc = pandoc2ansi.Pandoc2Ansi(width, padding, theme)
-		for block in output["blocks"]:
-			processpandoc.processBlock(block, pandoc)
-		print(pandoc.genOutput())
+	functions = pandoc2ansi, pandoc2plain
+	print(functions[args.to_plain](args.file, args.width))
 
 
 def cli() -> None:
 	"""Parse args from the command line"""
 	parser = argparse.ArgumentParser(description="Print md")
 	parser.add_argument("file", help="file to render")
-	parser.add_argument("--width", help="terminal width", action="store")
-	parser.add_argument("--padding", help="terminal padding", action="store")
-	parser.add_argument("--theme", help="theme to use r,g,b 0-5", action="store")
-	parser.add_argument("--to-ansi", help="convert to ansi", action="store_true")
+	parser.add_argument("--width", help="terminal width", action="store", type=int)
 	parser.add_argument("--to-plain", help="convert to plaintext", action="store_true")
 	args = parser.parse_args()
 	handle(args)

@@ -53,6 +53,7 @@ Cat multiple documents to the terminal. The continuation of CatMD
 	- [Rationale](#rationale)
 - [Screenshots](#screenshots)
 	- [Desktop](#desktop)
+	- [Themes](#themes)
 
 ## Features
 
@@ -132,8 +133,9 @@ Highlights the following:
 Renders the following
 
 - Tables
+- Images (uses catimage for this so they can look a bit blurry...)
 
-Highlights code blocks
+Higlights code blocks
 
 - Uses pygments for code syntax highlighting
 
@@ -336,4 +338,12 @@ for more information.
 <img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot 1" width="600">
 <img src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2" width="600">
 <img src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3" width="600">
+</div>
+
+### Themes
+
+<div>
+<img src="readme-assets/screenshots/themes/theme-1.png" alt="Screenshot 1" width="200">
+<img src="readme-assets/screenshots/themes/theme-2.png" alt="Screenshot 2" width="200">
+<img src="readme-assets/screenshots/themes/theme-3.png" alt="Screenshot 3" width="200">
 </div>

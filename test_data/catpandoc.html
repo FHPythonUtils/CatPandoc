@@ -1,0 +1,326 @@
+<p><a href="../../"><img
+src="https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="GitHub top language" /></a> <a href="../../"><img
+src="https://img.shields.io/github/repo-size/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="Repository size" /></a> <a href="../../issues"><img
+src="https://img.shields.io/github/issues/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="Issues" /></a> <a href="/LICENSE.md"><img
+src="https://img.shields.io/github/license/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="License" /></a> <a href="../../commits/master"><img
+src="https://img.shields.io/github/commit-activity/m/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="Commit activity" /></a> <a href="../../commits/master"><img
+src="https://img.shields.io/github/last-commit/FHPythonUtils/CatPandoc.svg?style=for-the-badge"
+alt="Last commit" /></a> <a
+href="https://pypistats.org/packages/catpandoc"><img
+src="https://img.shields.io/pypi/dm/catpandoc.svg?style=for-the-badge"
+alt="PyPI Downloads" /></a> <a
+href="https://pepy.tech/project/catpandoc"><img
+src="https://img.shields.io/badge/dynamic/json?style=for-the-badge&amp;label=total%20downloads&amp;query=%24.total_downloads&amp;url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fprojects%2Fcatpandoc"
+alt="PyPI Total Downloads" /></a> <a
+href="https://pypi.org/project/catpandoc"><img
+src="https://img.shields.io/pypi/v/catpandoc.svg?style=for-the-badge"
+alt="PyPI Version" /></a></p>
+<!-- omit in toc -->
+<h1 id="catpandoc">CatPandoc</h1>
+<p><img src="readme-assets/icons/name.png" alt="Project Icon" width="750"></p>
+<p>Cat multiple documents to the terminal. The continuation of CatMD</p>
+<ul>
+<li><a href="#features">Features</a>
+<ul>
+<li><a href="#document-compatability">Document Compatability</a></li>
+<li><a href="#terminal-rendering">Terminal ‘rendering’</a></li>
+</ul></li>
+<li><a href="#roadmap">Roadmap</a></li>
+<li><a href="#use">Use</a>
+<ul>
+<li><a href="#cli">CLI</a></li>
+<li><a href="#import">Import</a></li>
+</ul></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#install-with-pip">Install With PIP</a></li>
+<li><a href="#language-information">Language information</a>
+<ul>
+<li><a href="#built-for">Built for</a></li>
+</ul></li>
+<li><a href="#install-python-on-windows">Install Python on Windows</a>
+<ul>
+<li><a href="#chocolatey">Chocolatey</a></li>
+<li><a href="#windows---pythonorg">Windows - Python.org</a></li>
+</ul></li>
+<li><a href="#install-python-on-linux">Install Python on Linux</a>
+<ul>
+<li><a href="#apt">Apt</a></li>
+<li><a href="#dnf">Dnf</a></li>
+</ul></li>
+<li><a href="#install-python-on-macos">Install Python on MacOS</a>
+<ul>
+<li><a href="#homebrew">Homebrew</a></li>
+<li><a href="#macos---pythonorg">MacOS - Python.org</a></li>
+</ul></li>
+<li><a href="#how-to-run">How to run</a>
+<ul>
+<li><a href="#windows">Windows</a></li>
+<li><a href="#linux-macos">Linux/ MacOS</a></li>
+</ul></li>
+<li><a href="#download-project">Download Project</a>
+<ul>
+<li><a href="#clone">Clone</a>
+<ul>
+<li><a href="#using-the-command-line">Using The Command Line</a></li>
+<li><a href="#using-github-desktop">Using GitHub Desktop</a></li>
+</ul></li>
+<li><a href="#download-zip-file">Download Zip File</a></li>
+</ul></li>
+<li><a href="#community-files">Community Files</a>
+<ul>
+<li><a href="#licence">Licence</a></li>
+<li><a href="#changelog">Changelog</a></li>
+<li><a href="#code-of-conduct">Code of Conduct</a></li>
+<li><a href="#contributing">Contributing</a></li>
+<li><a href="#security">Security</a></li>
+<li><a href="#support">Support</a></li>
+<li><a href="#rationale">Rationale</a></li>
+</ul></li>
+<li><a href="#screenshots">Screenshots</a>
+<ul>
+<li><a href="#desktop">Desktop</a></li>
+<li><a href="#themes">Themes</a></li>
+</ul></li>
+</ul>
+<h2 id="features">Features</h2>
+<h3 id="document-compatability">Document Compatability</h3>
+<p>Lightweight markup formats</p>
+<ul>
+<li>Markdown (including CommonMark and GitHub-flavored Markdown)</li>
+<li>reStructuredText</li>
+<li>Emacs Org-Mode</li>
+<li>Emacs Muse</li>
+<li>Textile</li>
+<li>txt2tags</li>
+</ul>
+<p>HTML formats</p>
+<ul>
+<li>(X)HTML 4</li>
+<li>HTML5</li>
+</ul>
+<p>Ebooks</p>
+<ul>
+<li>EPUB version 2 or 3</li>
+<li>FictionBook2</li>
+</ul>
+<p>Documentation formats</p>
+<ul>
+<li>Haddock markup</li>
+</ul>
+<p>Roff formats</p>
+<ul>
+<li>roff man</li>
+</ul>
+<p>TeX formats</p>
+<ul>
+<li>LaTeX</li>
+</ul>
+<p>XML formats</p>
+<ul>
+<li>DocBook version 4 or 5</li>
+<li>JATS</li>
+</ul>
+<p>Outline formats</p>
+<ul>
+<li>OPML</li>
+</ul>
+<p>Data formats</p>
+<ul>
+<li>CSV tables</li>
+</ul>
+<p>Word processor formats</p>
+<ul>
+<li>Microsoft Word docx</li>
+<li>OpenOffice/LibreOffice ODT</li>
+</ul>
+<p>Interactive notebook formats</p>
+<ul>
+<li>Jupyter notebook (ipynb)</li>
+</ul>
+<p>Wiki markup formats</p>
+<ul>
+<li>MediaWiki markup</li>
+<li>DokuWiki markup</li>
+<li>TikiWiki markup</li>
+<li>TWiki markup</li>
+<li>Jira wiki markup</li>
+</ul>
+<h3 id="terminal-rendering">Terminal ‘rendering’</h3>
+<p>Highlights the following:</p>
+<ul>
+<li>Headers 1-6</li>
+<li>Unordered and ordered lists</li>
+<li>Block quotes</li>
+<li>Bold, Italic, Strikethrough, inline code</li>
+<li>Line Break (br)</li>
+</ul>
+<p>Renders the following</p>
+<ul>
+<li>Tables</li>
+<li>Images (uses catimage for this so they can look a bit blurry…)</li>
+</ul>
+<p>Higlights code blocks</p>
+<ul>
+<li>Uses pygments for code syntax highlighting</li>
+</ul>
+<h2 id="roadmap">Roadmap</h2>
+<p>For completed components, see the changelog (link below)</p>
+<table>
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>pandoc2pysimplegui.py</td>
+<td>Generate PySimpleGUI widgets</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<h2 id="use">Use</h2>
+<h3 id="cli">CLI</h3>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">usage:</span> application.py [-h] [--width WIDTH] [--theme THEME] file</span></code></pre></div>
+<h3 id="import">Import</h3>
+<p>Take a look at test/catcomplex.py for an example of how to use
+catpandoc in your own project. Or take a look at the example below</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pypandoc</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> catpandoc <span class="im">import</span> pandoc2ansi, processpandoc</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>output <span class="op">=</span> json.loads(pypandoc.convert_file(<span class="st">&quot;cheatsheet.md&quot;</span>, <span class="st">&#39;json&#39;</span>))</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> block <span class="kw">in</span> output[<span class="st">&quot;blocks&quot;</span>]:</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    pandoc <span class="op">=</span> pandoc2ansi.Pandoc2Ansi(<span class="dv">130</span>, <span class="dv">5</span>, (<span class="dv">4</span>, <span class="dv">0</span>, <span class="dv">0</span>))</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    processpandoc.processBlock(block, pandoc)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(pandoc.genOutput())</span></code></pre></div>
+<h2 id="documentation">Documentation</h2>
+<p>See the <a href="/DOCS/">Docs</a> for more information.</p>
+<h2 id="install-with-pip">Install With PIP</h2>
+<div class="sourceCode" id="cb3"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>pip install catpandoc</span></code></pre></div>
+<p>Head to https://pypi.org/project/catpandoc/ for more info</p>
+<h2 id="language-information">Language information</h2>
+<h3 id="built-for">Built for</h3>
+<p>This program has been written for Python versions 3.7 - 3.10 and has
+been tested with both 3.7 and 3.10</p>
+<h2 id="install-python-on-windows">Install Python on Windows</h2>
+<h3 id="chocolatey">Chocolatey</h3>
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>choco install python</span></code></pre></div>
+<h3 id="windows---python.org">Windows - Python.org</h3>
+<p>To install Python, go to https://www.python.org/downloads/windows/
+and download the latest version.</p>
+<h2 id="install-python-on-linux">Install Python on Linux</h2>
+<h3 id="apt">Apt</h3>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install python3.x</span></code></pre></div>
+<h3 id="dnf">Dnf</h3>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dnf install python3.x</span></code></pre></div>
+<h2 id="install-python-on-macos">Install Python on MacOS</h2>
+<h3 id="homebrew">Homebrew</h3>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install python@3.x</span></code></pre></div>
+<h3 id="macos---python.org">MacOS - Python.org</h3>
+<p>To install Python, go to https://www.python.org/downloads/macos/ and
+download the latest version.</p>
+<h2 id="how-to-run">How to run</h2>
+<h3 id="windows">Windows</h3>
+<ul>
+<li><p>Module <code>py -3.x -m [module]</code> or <code>[module]</code>
+(if module installs a script)</p></li>
+<li><p>File <code>py -3.x [file]</code> or
+<code>./[file]</code></p></li>
+</ul>
+<h3 id="linux-macos">Linux/ MacOS</h3>
+<ul>
+<li><p>Module <code>python3.x -m [module]</code> or
+<code>[module]</code> (if module installs a script)</p></li>
+<li><p>File <code>python3.x [file]</code> or
+<code>./[file]</code></p></li>
+</ul>
+<h2 id="download-project">Download Project</h2>
+<h3 id="clone">Clone</h3>
+<h4 id="using-the-command-line">Using The Command Line</h4>
+<ol type="1">
+<li>Press the Clone or download button in the top right</li>
+<li>Copy the URL (link)</li>
+<li>Open the command line and change directory to where you wish to
+clone to</li>
+<li>Type ‘git clone’ followed by URL in step 2</li>
+</ol>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode bash"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/FHPythonUtils/CatPandoc</span></code></pre></div>
+<p>More information can be found at
+https://help.github.com/en/articles/cloning-a-repository</p>
+<h4 id="using-github-desktop">Using GitHub Desktop</h4>
+<ol type="1">
+<li>Press the Clone or download button in the top right</li>
+<li>Click open in desktop</li>
+<li>Choose the path for where you want and click Clone</li>
+</ol>
+<p>More information can be found at
+https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop</p>
+<h3 id="download-zip-file">Download Zip File</h3>
+<ol type="1">
+<li>Download this GitHub repository</li>
+<li>Extract the zip archive</li>
+<li>Copy/ move to the desired location</li>
+</ol>
+<h2 id="community-files">Community Files</h2>
+<h3 id="licence">Licence</h3>
+<p>MIT License Copyright (c) FredHappyface (See the <a
+href="/LICENSE.md">LICENSE</a> for more information.)</p>
+<h3 id="changelog">Changelog</h3>
+<p>See the <a href="/CHANGELOG.md">Changelog</a> for more
+information.</p>
+<h3 id="code-of-conduct">Code of Conduct</h3>
+<p>Online communities include people from many backgrounds. The
+<em>Project</em> contributors are committed to providing a friendly,
+safe and welcoming environment for all. Please see the <a
+href="https://github.com/FHPythonUtils/.github/blob/master/CODE_OF_CONDUCT.md">Code
+of Conduct</a> for more information.</p>
+<h3 id="contributing">Contributing</h3>
+<p>Contributions are welcome, please see the <a
+href="https://github.com/FHPythonUtils/.github/blob/master/CONTRIBUTING.md">Contributing
+Guidelines</a> for more information.</p>
+<h3 id="security">Security</h3>
+<p>Thank you for improving the security of the project, please see the
+<a
+href="https://github.com/FHPythonUtils/.github/blob/master/SECURITY.md">Security
+Policy</a> for more information.</p>
+<h3 id="support">Support</h3>
+<p>Thank you for using this project, I hope it is of use to you. Please
+be aware that those involved with the project often do so for fun along
+with other commitments (such as work, family, etc). Please see the <a
+href="https://github.com/FHPythonUtils/.github/blob/master/SUPPORT.md">Support
+Policy</a> for more information.</p>
+<h3 id="rationale">Rationale</h3>
+<p>The rationale acts as a guide to various processes regarding projects
+such as the versioning scheme and the programming styles used. Please
+see the <a
+href="https://github.com/FHPythonUtils/.github/blob/master/RATIONALE.md">Rationale</a>
+for more information.</p>
+<h2 id="screenshots">Screenshots</h2>
+<h3 id="desktop">Desktop</h3>
+<div>
+<p><img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot 1" width="600">
+<img src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2" width="600">
+<img src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3" width="600"></p>
+</div>
+<h3 id="themes">Themes</h3>
+<div>
+<p><img src="readme-assets/screenshots/themes/theme-1.png" alt="Screenshot 1" width="200">
+<img src="readme-assets/screenshots/themes/theme-2.png" alt="Screenshot 2" width="200">
+<img src="readme-assets/screenshots/themes/theme-3.png" alt="Screenshot 3" width="200"></p>
+</div>
