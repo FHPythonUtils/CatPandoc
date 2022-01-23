@@ -81,43 +81,18 @@ class Pandoc2Ansi(Pandoc2Plain):
 			self.print(CLR, end="")
 		else:
 			concatContent = "".join([processpandoc.toPlaintext(part) for part in content[2]])
-			if any(char in concatContent for char in ["q", "y", "p", "g", "j"]):
-				limit = 1
-			else:
-				limit = 2
-			if content[0] == 1:
-				if len(concatContent) > self.width / 7:
-					concatContent = concatContent[: int(self.width / 7)]
-				self.print(
-					FG
-					+ headColour[content[0]]
-					+ "\n".join(
-						art.text2art(concatContent, "swan").split("\n")[  # type: ignore
-							2 : -limit - 1
-						]
-					)
+			concatContent = "".join([processpandoc.toPlaintext(part) for part in content[2]])
+			self.print(
+				FG
+				+ headColour[content[0]]
+				+ "\n".join(
+					art.text2art(
+						f"{concatContent:.{self.width // [1, 7, 5, 3][content[0]]}}",
+						["", "tarty1", "tarty3", "tarty2"][content[0]],
+					).split("\n")[1 : -[0, 0, 0, 1][content[0]]]
 				)
-				self.print("▀" * self.width + CLR)
-			if content[0] == 2:
-				if len(concatContent) > self.width / 5:
-					concatContent = concatContent[: int(self.width / 5)]
-				self.print(
-					FG
-					+ headColour[content[0]]
-					+ "\n".join(art.text2art(concatContent, "thin").split("\n")[1:-limit])
-				)  # type: ignore
-				self.print("━" * self.width + CLR)
-			if content[0] == 3:
-				if len(concatContent) > self.width / 3:
-					concatContent = concatContent[: int(self.width / 3)]
-				self.print(
-					FG
-					+ headColour[content[0]]
-					+ "\n".join(
-						art.text2art(concatContent, "cygnet").split("\n")[1:-limit]  # type: ignore
-					)
-				)
-				self.print("─" * self.width + CLR)
+			)
+			self.print(["", "▀", "━", "─"][content[0]] * self.width + CLR)
 
 	def codeBlock(self, content: tuple[Any, str]):
 		"""Process a code block"""

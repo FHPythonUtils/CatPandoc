@@ -46,7 +46,7 @@ Convert a pandoc string to plaintext
 
 ### Pandoc2Plain().blockQuote
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L169)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L159)
 
 ```python
 def blockQuote(content: list[Block]):
@@ -56,7 +56,7 @@ Process a block quote
 
 ### Pandoc2Plain().bulletList
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L118)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L108)
 
 ```python
 def bulletList(content: list[list[Block]]):
@@ -76,7 +76,7 @@ catImage
 
 ### Pandoc2Plain().code
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L225)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L215)
 
 ```python
 def code(content: tuple[(Any, str)]):
@@ -86,7 +86,7 @@ Process code
 
 ### Pandoc2Plain().codeBlock
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L92)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L82)
 
 ```python
 def codeBlock(content: tuple[(Any, str)]):
@@ -96,7 +96,7 @@ Process a code block
 
 ### Pandoc2Plain().definitionList
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L97)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L87)
 
 ```python
 def definitionList(content: list[tuple[(list[Inline], list[list[Block]])]]):
@@ -106,7 +106,7 @@ Process a definition list
 
 ### Pandoc2Plain().emph
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L182)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L172)
 
 ```python
 def emph(content: list[Inline]):
@@ -136,7 +136,7 @@ Process a header
 
 ### Pandoc2Plain().hr
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L253)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L243)
 
 ```python
 def hr():
@@ -146,7 +146,7 @@ Process a hr
 
 ### Pandoc2Plain().image
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L243)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L233)
 
 ```python
 def image(content: tuple[(Any, Any, tuple[(str, str)])]):
@@ -156,7 +156,7 @@ Process an image
 
 ### Pandoc2Plain().link
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L247)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L237)
 
 ```python
 def link(content: tuple[(Any, list[Inline], tuple[(str, str)])]):
@@ -166,7 +166,7 @@ Process a link
 
 ### Pandoc2Plain().math
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L229)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L219)
 
 ```python
 def math(content: tuple[(Any, str)]):
@@ -186,7 +186,7 @@ newline
 
 ### Pandoc2Plain().note
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L233)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L223)
 
 ```python
 def note(content: list[Block]):
@@ -196,7 +196,7 @@ Process a note
 
 ### Pandoc2Plain().orderedList
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L109)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L99)
 
 ```python
 def orderedList(content: list[tuple[(list[Any], list[Block])]]):
@@ -217,7 +217,7 @@ to the inbuilt print method
 
 ### Pandoc2Plain().quoted
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L218)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L208)
 
 ```python
 def quoted(content: tuple[(Any, list[Inline])]):
@@ -227,7 +227,7 @@ Process quoted text
 
 ### Pandoc2Plain().smallCaps
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L213)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L203)
 
 ```python
 def smallCaps(content: list[Inline]):
@@ -237,7 +237,7 @@ Process small caps text
 
 ### Pandoc2Plain().space
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L178)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L168)
 
 ```python
 def space():
@@ -247,7 +247,7 @@ Process a space
 
 ### Pandoc2Plain().span
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L238)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L228)
 
 ```python
 def span(content: tuple[(Any, list[Inline])]):
@@ -257,7 +257,7 @@ Process a span
 
 ### Pandoc2Plain().strikeout
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L196)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L186)
 
 ```python
 def strikeout(content: list[Inline]):
@@ -267,7 +267,7 @@ Process strikeout (crossed out) text
 
 ### Pandoc2Plain().strong
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L189)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L179)
 
 ```python
 def strong(content: list[Inline]):
@@ -277,7 +277,7 @@ Process strong (bold) text
 
 ### Pandoc2Plain().subscript
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L208)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L198)
 
 ```python
 def subscript(content: list[Inline]):
@@ -287,7 +287,7 @@ Process subscript text
 
 ### Pandoc2Plain().superscript
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L203)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L193)
 
 ```python
 def superscript(content: list[Inline]):
@@ -297,7 +297,7 @@ Process superscript text
 
 ### Pandoc2Plain().table
 
-[[find in source code]](../../catpandoc/pandoc2plain.py#L128)
+[[find in source code]](../../catpandoc/pandoc2plain.py#L118)
 
 ```python
 def table(

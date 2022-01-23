@@ -11,7 +11,7 @@ Cat a pandoc json string
 
 ## cli
 
-[[find in source code]](../../catpandoc/application.py#L59)
+[[find in source code]](../../catpandoc/application.py#L60)
 
 ```python
 def cli() -> None:
@@ -21,7 +21,7 @@ Parse args from the command line
 
 ## handle
 
-[[find in source code]](../../catpandoc/application.py#L17)
+[[find in source code]](../../catpandoc/application.py#L18)
 
 ```python
 def handle(args: argparse.Namespace):

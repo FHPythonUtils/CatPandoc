@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "catpandoc"
-version = "2021.0.2"
+version = "2022"
 license = "mit"
 description = "Cat multiple document files to the terminal"
 authors = ["FredHappyface"]
@@ -26,11 +26,11 @@ catpandoc = 'catpandoc.application:cli'
 
 [tool.poetry.dependencies]
 python = "^3.7"
-art = "<6,>=5.3"
-emoji = "<2,>=1.6.1"
-pypandoc = "<2,>=1.6.4"
-catimage = "<2023,>=2021"
-Pygments = "<3,>=2.10.0"
+art = "<6,>=5.4"
+emoji = "<2,>=1.6.3"
+pypandoc = "<2,>=1.7.2"
+catimage = "<2023,>=2021.0.1"
+Pygments = "<3,>=2.11.2"
 
 [tool.pylint.basic]
 argument-naming-style = "camelCase"

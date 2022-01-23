@@ -28,12 +28,16 @@ Cat multiple documents to the terminal. The continuation of CatMD
 	- [Built for](#built-for)
 - [Install Python on Windows](#install-python-on-windows)
 	- [Chocolatey](#chocolatey)
-	- [Download](#download)
+	- [Windows - Python.org](#windows---pythonorg)
 - [Install Python on Linux](#install-python-on-linux)
 	- [Apt](#apt)
+	- [Dnf](#dnf)
+- [Install Python on MacOS](#install-python-on-macos)
+	- [Homebrew](#homebrew)
+	- [MacOS - Python.org](#macos---pythonorg)
 - [How to run](#how-to-run)
-	- [With VSCode](#with-vscode)
-	- [From the Terminal](#from-the-terminal)
+	- [Windows](#windows)
+	- [Linux/ MacOS](#linux-macos)
 - [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
@@ -56,6 +60,7 @@ Cat multiple documents to the terminal. The continuation of CatMD
 ### Document Compatability
 
 Lightweight markup formats
+
 - Markdown (including CommonMark and GitHub-flavored Markdown)
 - reStructuredText
 - Emacs Org-Mode
@@ -64,40 +69,51 @@ Lightweight markup formats
 - txt2tags
 
 HTML formats
+
 - (X)HTML 4
 - HTML5
 
 Ebooks
+
 - EPUB version 2 or 3
 - FictionBook2
 
 Documentation formats
+
 - Haddock markup
 
 Roff formats
+
 - roff man
 
 TeX formats
+
 - LaTeX
 
 XML formats
+
 - DocBook version 4 or 5
 - JATS
 
 Outline formats
+
 - OPML
 
 Data formats
+
 - CSV tables
 
 Word processor formats
+
 - Microsoft Word docx
 - OpenOffice/LibreOffice ODT
 
 Interactive notebook formats
+
 - Jupyter notebook (ipynb)
 
 Wiki markup formats
+
 - MediaWiki markup
 - DokuWiki markup
 - TikiWiki markup
@@ -107,6 +123,7 @@ Wiki markup formats
 ### Terminal 'rendering'
 
 Highlights the following:
+
 - Headers 1-6
 - Unordered and ordered lists
 - Block quotes
@@ -114,10 +131,12 @@ Highlights the following:
 - Line Break (br)
 
 Renders the following
+
 - Tables
 - Images (uses catimage for this so they can look a bit blurry...)
 
 Higlights code blocks
+
 - Uses pygments for code syntax highlighting
 
 ## Roadmap
@@ -140,6 +159,7 @@ usage: application.py [-h] [--width WIDTH] [--theme THEME] file
 
 Take a look at test/catcomplex.py for an example of how to use catpandoc in your own
 project. Or take a look at the example below
+
 ```python
 import json
 import pypandoc
@@ -240,6 +260,7 @@ version.
 3. Open the command line and change directory to where you wish to
 clone to
 4. Type 'git clone' followed by URL in step 2
+
 ```bash
 git clone https://github.com/FHPythonUtils/CatPandoc
 ```

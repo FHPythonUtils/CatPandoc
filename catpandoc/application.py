@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import shutil
 from sys import stdout
 
 import pypandoc
@@ -29,7 +30,7 @@ def handle(args: argparse.Namespace):
 	output = json.loads(pypandoc.convert_file(args.file, "json"))  # type: ignore
 
 	# Process args
-	width = 80
+	width = shutil.get_terminal_size()[0]
 	padding = 0
 	if args.width is not None:
 		width = int(args.width)
