@@ -25,7 +25,7 @@ def handle(args: argparse.Namespace):
 	# Open file and convert to JSON
 	try:
 		pypandoc.convert_text("#test", "json", format="md")  # type: ignore
-	except (FileNotFoundError, OSError):
+	except OSError:
 		pypandoc.download_pandoc()  # type: ignore
 	output = json.loads(pypandoc.convert_file(args.file, "json"))  # type: ignore
 

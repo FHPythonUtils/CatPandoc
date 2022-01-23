@@ -194,6 +194,7 @@ def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
 		# inline[]
 		for inline in block["c"]:
 			processInline(inline, pandoc2)
+		pandoc2.newline()
 	if block["t"] == "LineBlock":
 		# inline[][]
 		# TODO
@@ -211,9 +212,12 @@ def processBlock(block: Block, pandoc2: pandoc2xyz.Pandoc2XYZ) -> None:
 	if block["t"] == "OrderedList":
 		# attributes, block[][]
 		pandoc2.orderedList(block["c"])
+		pandoc2.newline()
 	if block["t"] == "BulletList":
 		# block[][]
 		pandoc2.bulletList(block["c"])
+		pandoc2.newline()
+
 	if block["t"] == "DefinitionList":
 		# [key, value] key=inline[] value=block[]
 		pandoc2.definitionList(block["c"])
