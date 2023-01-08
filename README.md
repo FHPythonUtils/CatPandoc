@@ -38,6 +38,7 @@ Cat multiple documents to the terminal. The continuation of CatMD
 - [How to run](#how-to-run)
 	- [Windows](#windows)
 	- [Linux/ MacOS](#linux-macos)
+- [Building](#building)
 - [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)
@@ -199,8 +200,8 @@ Head to https://pypi.org/project/catpandoc/ for more info
 
 ### Built for
 
-This program has been written for Python versions 3.7 - 3.10 and has been tested with both 3.7 and
-3.10
+This program has been written for Python versions 3.8 - 3.11 and has been tested with both 3.8 and
+3.11
 
 ## Install Python on Windows
 
@@ -259,6 +260,22 @@ version.
 
 - File
 	`python3.x [file]` or `./[file]`
+
+## Building
+
+This project uses https://github.com/FHPythonUtils/FHMake to automate most of the building. This
+command generates the documentation, updates the requirements.txt and builds the library artefacts
+
+Note the functionality provided by fhmake can be approximated by the following
+
+```sh
+handsdown  --cleanup -o documentation/reference
+poetry export -f requirements.txt --output requirements.txt
+poetry export -f requirements.txt --with dev --output requirements_optional.txt
+poetry build
+```
+
+`fhmake audit` can be run to perform additional checks
 
 ## Download Project
 
