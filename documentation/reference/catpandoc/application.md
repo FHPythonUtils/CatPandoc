@@ -1,33 +1,35 @@
 # Application
 
+[Catpandoc Index](../README.md#catpandoc-index) /
+[Catpandoc](./index.md#catpandoc) /
+Application
+
 > Auto-generated documentation for [catpandoc.application](../../../catpandoc/application.py) module.
 
-CLI Application
-Cat a pandoc json string
-
-- [Catpandoc](../README.md#catpandoc-index) / [Modules](../MODULES.md#catpandoc-modules) / [Catpandoc](index.md#catpandoc) / Application
-    - [cli](#cli)
-    - [handle](#handle)
-    - [pandoc2ansi](#pandoc2ansi)
-    - [pandoc2plain](#pandoc2plain)
+- [Application](#application)
+  - [cli](#cli)
+  - [handle](#handle)
+  - [pandoc2ansi](#pandoc2ansi)
+  - [pandoc2plain](#pandoc2plain)
 
 ## cli
 
-[[find in source code]](../../../catpandoc/application.py#L47)
-
-```python
-def cli() -> None:
-```
+[Show source in application.py:47](../../../catpandoc/application.py#L47)
 
 Parse args from the command line
 
-## handle
-
-[[find in source code]](../../../catpandoc/application.py#L29)
+#### Signature
 
 ```python
-def handle(args: argparse.Namespace):
+def cli() -> None:
+    ...
 ```
+
+
+
+## handle
+
+[Show source in application.py:29](../../../catpandoc/application.py#L29)
 
 Handle the args and output to the terminal
 
@@ -35,18 +37,37 @@ Handle the args and output to the terminal
 
 - `args` *argparse.Namespace* - Args
 
+#### Signature
+
+```python
+def handle(args: argparse.Namespace):
+    ...
+```
+
+
+
 ## pandoc2ansi
 
-[[find in source code]](../../../catpandoc/application.py#L13)
+[Show source in application.py:13](../../../catpandoc/application.py#L13)
+
+#### Signature
 
 ```python
 def pandoc2ansi(file: str, width: int) -> str:
+    ...
 ```
+
+
 
 ## pandoc2plain
 
-[[find in source code]](../../../catpandoc/application.py#L21)
+[Show source in application.py:21](../../../catpandoc/application.py#L21)
+
+#### Signature
 
 ```python
 def pandoc2plain(file: str, width: int) -> str:
+    ...
 ```
+
+
