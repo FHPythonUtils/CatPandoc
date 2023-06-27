@@ -10,7 +10,7 @@ from rich.console import Console
 from rich.markdown import Markdown
 
 
-def pandoc2ansi(file: str, width: int) -> str:
+def pandoc2ansi(file: str, width: int = 79) -> str:
 	console = Console(width=width)
 	markdown = Markdown(pypandoc.convert_file(file, "md"))
 	with console.capture() as capture:
@@ -18,7 +18,7 @@ def pandoc2ansi(file: str, width: int) -> str:
 	return capture.get()
 
 
-def pandoc2plain(file: str, width: int) -> str:
+def pandoc2plain(file: str, width: int = 79) -> str:
 	console = Console(color_system=None, width=width)
 	markdown = Markdown(pypandoc.convert_file(file, "md"))
 	with console.capture() as capture:
@@ -39,9 +39,11 @@ def handle(args: argparse.Namespace):
 	except OSError:
 		pypandoc.download_pandoc()  # type: ignore
 
+	width = args.width or 79
+
 	# Print to console
 	functions = pandoc2ansi, pandoc2plain
-	print(functions[args.to_plain](args.file, args.width))
+	print(functions[args.to_plain](args.file, width))
 
 
 def cli() -> None:

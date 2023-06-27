@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "catpandoc"
-version = "2022.1"
+version = "2022.2"
 license = "mit"
 description = "Cat multiple document files to the terminal"
 authors = ["FredHappyface"]
@@ -26,8 +26,13 @@ catpandoc = 'catpandoc.application:cli'
 
 [tool.poetry.dependencies]
 python = "^3.7"
-pypandoc = "<2,>=1.7.2"
-rich = "<12,>=11.0.0"
+pypandoc = "<2,>=1.11"
+rich = "<14,>=13.4.2"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.0"
+tox = "^4.6.3"
+coverage = "^7.2.7"
 
 [tool.black]
 line-length = 100
@@ -61,3 +66,21 @@ ignore-paths = ["tests"]
 [tool.pylint.messages_control]
 enable = ["F", "E", "W", "R", "C"]
 disable = ["pointless-string-statement", "superfluous-parens"]
+
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+isolated_build = True
+env_list =
+	py311
+	py310
+	py39
+	py38
+
+[testenv]
+allowlist_externals = poetry
+commands =
+  poetry install -v
+  poetry run pytest
+"""

@@ -38,6 +38,8 @@ Cat multiple documents to the terminal. The continuation of CatMD
 - [How to run](#how-to-run)
 	- [Windows](#windows)
 	- [Linux/ MacOS](#linux-macos)
+- [Building](#building)
+- [Testing](#testing)
 - [Download Project](#download-project)
 	- [Clone](#clone)
 		- [Using The Command Line](#using-the-command-line)

@@ -14,7 +14,7 @@ Application
 
 ## cli
 
-[Show source in application.py:47](../../../catpandoc/application.py#L47)
+[Show source in application.py:49](../../../catpandoc/application.py#L49)
 
 Parse args from the command line
 
@@ -53,7 +53,7 @@ def handle(args: argparse.Namespace):
 #### Signature
 
 ```python
-def pandoc2ansi(file: str, width: int) -> str:
+def pandoc2ansi(file: str, width: int = 79) -> str:
     ...
 ```
 
@@ -66,7 +66,7 @@ def pandoc2ansi(file: str, width: int) -> str:
 #### Signature
 
 ```python
-def pandoc2plain(file: str, width: int) -> str:
+def pandoc2plain(file: str, width: int = 79) -> str:
     ...
 ```
 

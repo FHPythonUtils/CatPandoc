@@ -1,0 +1,383 @@
+🌆 GitHub top
+language 🌆 Repository
+size 🌆 Issues 🌆 License 🌆 Commit
+activity 🌆 Last
+commit 🌆 PyPI
+Downloads 🌆 PyPI Total
+Downloads 🌆 PyPI
+Version                                                                        
+
+┌─────────────────────────────────────────────────────────────────────────────┐
+│                                  CatPandoc                                  │
+└─────────────────────────────────────────────────────────────────────────────┘
+
+🌆 Project Icon {width="750"}                                                  
+
+Cat multiple documents to the terminal. The continuation of CatMD              
+
+ • Features                                                                    
+    • Document Compatability                                                   
+    • Terminal 'rendering'                                                     
+ • Roadmap                                                                     
+ • Use                                                                         
+    • CLI                                                                      
+    • Import                                                                   
+ • Documentation                                                               
+ • Install With PIP                                                            
+ • Language information                                                        
+    • Built for                                                                
+ • Install Python on Windows                                                   
+    • Chocolatey                                                               
+    • Windows - Python.org                                                     
+ • Install Python on Linux                                                     
+    • Apt                                                                      
+    • Dnf                                                                      
+ • Install Python on MacOS                                                     
+    • Homebrew                                                                 
+    • MacOS - Python.org                                                       
+ • How to run                                                                  
+    • Windows                                                                  
+    • Linux/ MacOS                                                             
+ • Download Project                                                            
+    • Clone                                                                    
+       • Using The Command Line                                                
+       • Using GitHub Desktop                                                  
+    • Download Zip File                                                        
+ • Community Files                                                             
+    • Licence                                                                  
+    • Changelog                                                                
+    • Code of Conduct                                                          
+    • Contributing                                                             
+    • Security                                                                 
+    • Support                                                                  
+    • Rationale                                                                
+ • Screenshots                                                                 
+    • Desktop                                                                  
+    • Themes                                                                   
+
+
+                                   Features                                    
+
+                            Document Compatability                             
+
+Lightweight markup formats                                                     
+
+ • Markdown (including CommonMark and GitHub-flavored Markdown)                
+ • reStructuredText                                                            
+ • Emacs Org-Mode                                                              
+ • Emacs Muse                                                                  
+ • Textile                                                                     
+ • txt2tags                                                                    
+
+HTML formats                                                                   
+
+ • (X)HTML 4                                                                   
+ • HTML5                                                                       
+
+Ebooks                                                                         
+
+ • EPUB version 2 or 3                                                         
+ • FictionBook2                                                                
+
+Documentation formats                                                          
+
+ • Haddock markup                                                              
+
+Roff formats                                                                   
+
+ • roff man                                                                    
+
+TeX formats                                                                    
+
+ • LaTeX                                                                       
+
+XML formats                                                                    
+
+ • DocBook version 4 or 5                                                      
+ • JATS                                                                        
+
+Outline formats                                                                
+
+ • OPML                                                                        
+
+Data formats                                                                   
+
+ • CSV tables                                                                  
+
+Word processor formats                                                         
+
+ • Microsoft Word docx                                                         
+ • OpenOffice/LibreOffice ODT                                                  
+
+Interactive notebook formats                                                   
+
+ • Jupyter notebook (ipynb)                                                    
+
+Wiki markup formats                                                            
+
+ • MediaWiki markup                                                            
+ • DokuWiki markup                                                             
+ • TikiWiki markup                                                             
+ • TWiki markup                                                                
+ • Jira wiki markup                                                            
+
+                             Terminal 'rendering'                              
+
+Highlights the following:                                                      
+
+ • Headers 1-6                                                                 
+ • Unordered and ordered lists                                                 
+ • Block quotes                                                                
+ • Bold, Italic, Strikethrough, inline code                                    
+ • Line Break (br)                                                             
+
+Renders the following                                                          
+
+ • Tables                                                                      
+ • Images (uses catimage for this so they can look a bit blurry...)            
+
+Higlights code blocks                                                          
+
+ • Uses pygments for code syntax highlighting                                  
+
+
+                                    Roadmap                                    
+
+For completed components, see the changelog (link below)                       
+
+Feature                 Description                    Status                  
+
+───────────────────────────────────────────────────────────────────────────────
+pandoc2pysimplegui.py   Generate PySimpleGUI widgets   -                       
+
+
+                                      Use                                      
+
+                                      CLI                                      
+
+::: {#cb1 .sourceCode}                                                         
+
+                                                                               
+ usage: application.py [-h] [--width WIDTH] [--theme THEME] file               
+                                                                               
+
+:::                                                                            
+
+                                    Import                                     
+
+Take a look at test/catcomplex.py for an example of how to use catpandoc in    
+your own project. Or take a look at the example below                          
+
+::: {#cb2 .sourceCode}                                                         
+
+                                                                               
+ import json                                                                   
+ import pypandoc                                                               
+ from catpandoc import pandoc2ansi, processpandoc                              
+                                                                               
+ output = json.loads(pypandoc.convert_file("cheatsheet.md", 'json'))           
+ for block in output["blocks"]:                                                
+     pandoc = pandoc2ansi.Pandoc2Ansi(130, 5, (4, 0, 0))                       
+     processpandoc.processBlock(block, pandoc)                                 
+     print(pandoc.genOutput())                                                 
+                                                                               
+
+:::                                                                            
+
+
+                                 Documentation                                 
+
+See the Docs for more information.                                             
+
+
+                               Install With PIP                                
+
+::: {#cb3 .sourceCode}                                                         
+
+                                                                               
+ pip install catpandoc                                                         
+                                                                               
+
+:::                                                                            
+
+Head to https://pypi.org/project/catpandoc/ for more info                      
+
+
+                             Language information                              
+
+                                   Built for                                   
+
+This program has been written for Python versions 3.7 - 3.10 and has been      
+tested with both 3.7 and 3.10                                                  
+
+
+                           Install Python on Windows                           
+
+                                  Chocolatey                                   
+
+::: {#cb4 .sourceCode}                                                         
+
+                                                                               
+ choco install python                                                          
+                                                                               
+
+:::                                                                            
+
+                             Windows - Python.org                              
+
+To install Python, go to https://www.python.org/downloads/windows/ and download
+the latest version.                                                            
+
+
+                            Install Python on Linux                            
+
+                                      Apt                                      
+
+::: {#cb5 .sourceCode}                                                         
+
+                                                                               
+ sudo apt install python3.x                                                    
+                                                                               
+
+:::                                                                            
+
+                                      Dnf                                      
+
+::: {#cb6 .sourceCode}                                                         
+
+                                                                               
+ sudo dnf install python3.x                                                    
+                                                                               
+
+:::                                                                            
+
+
+                            Install Python on MacOS                            
+
+                                   Homebrew                                    
+
+::: {#cb7 .sourceCode}                                                         
+
+                                                                               
+ brew install python@3.x                                                       
+                                                                               
+
+:::                                                                            
+
+                              MacOS - Python.org                               
+
+To install Python, go to https://www.python.org/downloads/macos/ and download  
+the latest version.                                                            
+
+
+                                  How to run                                   
+
+                                    Windows                                    
+
+ • Module py -3.x -m [module] or [module] (if module installs a script)        
+ • File py -3.x [file] or ./[file]                                             
+
+                                 Linux/ MacOS                                  
+
+ • Module python3.x -m [module] or [module] (if module installs a script)      
+ • File python3.x [file] or ./[file]                                           
+
+
+                               Download Project                                
+
+                                     Clone                                     
+
+                            Using The Command Line                             
+
+ 1 Press the Clone or download button in the top right                         
+ 2 Copy the URL (link)                                                         
+ 3 Open the command line and change directory to where you wish to clone to    
+ 4 Type 'git clone' followed by URL in step 2                                  
+
+::: {#cb8 .sourceCode}                                                         
+
+                                                                               
+ git clone https://github.com/FHPythonUtils/CatPandoc                          
+                                                                               
+
+:::                                                                            
+
+More information can be found at                                               
+https://help.github.com/en/articles/cloning-a-repository                       
+
+                             Using GitHub Desktop                              
+
+ 1 Press the Clone or download button in the top right                         
+ 2 Click open in desktop                                                       
+ 3 Choose the path for where you want and click Clone                          
+
+More information can be found at                                               
+https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repositor
+y-from-github-to-github-desktop                                                
+
+                               Download Zip File                               
+
+ 1 Download this GitHub repository                                             
+ 2 Extract the zip archive                                                     
+ 3 Copy/ move to the desired location                                          
+
+
+                                Community Files                                
+
+                                    Licence                                    
+
+MIT License Copyright (c) FredHappyface (See the LICENSE for more information.)
+
+                                   Changelog                                   
+
+See the Changelog for more information.                                        
+
+                                Code of Conduct                                
+
+Online communities include people from many backgrounds. The Project           
+contributors are committed to providing a friendly, safe and welcoming         
+environment for all. Please see the Code of Conduct for more information.      
+
+                                 Contributing                                  
+
+Contributions are welcome, please see the Contributing Guidelines for more     
+information.                                                                   
+
+                                   Security                                    
+
+Thank you for improving the security of the project, please see the Security   
+Policy for more information.                                                   
+
+                                    Support                                    
+
+Thank you for using this project, I hope it is of use to you. Please be aware  
+that those involved with the project often do so for fun along with other      
+commitments (such as work, family, etc). Please see the Support Policy for more
+information.                                                                   
+
+                                   Rationale                                   
+
+The rationale acts as a guide to various processes regarding projects such as  
+the versioning scheme and the programming styles used. Please see the Rationale
+for more information.                                                          
+
+
+                                  Screenshots                                  
+
+                                    Desktop                                    
+
+
+🌆 Screenshot
+1 🌆 Screenshot
+2 🌆 Screenshot
+3 {width="600"} {width="600"} {width="600"}                                    
+
+
+                                    Themes                                     
+
+
+🌆 Screenshot
+1 🌆 Screenshot
+2 🌆 Screenshot
+3 {width="200"} {width="200"} {width="200"}                                    
+
