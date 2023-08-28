@@ -1,12 +1,11 @@
-[![GitHub top language](https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
-[![Repository size](https://img.shields.io/github/repo-size/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../)
-[![Issues](https://img.shields.io/github/issues/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../issues)
-[![License](https://img.shields.io/github/license/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](/LICENSE.md)
-[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../commits/master)
-[![Last commit](https://img.shields.io/github/last-commit/FHPythonUtils/CatPandoc.svg?style=for-the-badge)](../../commits/master)
-[![PyPI Downloads](https://img.shields.io/pypi/dm/catpandoc.svg?style=for-the-badge)](https://pypistats.org/packages/catpandoc)
-[![PyPI Total Downloads](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=total%20downloads&query=%24.total_downloads&url=https%3A%2F%2Fapi.pepy.tech%2Fapi%2Fprojects%2Fcatpandoc)](https://pepy.tech/project/catpandoc)
-[![PyPI Version](https://img.shields.io/pypi/v/catpandoc.svg?style=for-the-badge)](https://pypi.org/project/catpandoc)
+[![GitHub top language](https://img.shields.io/github/languages/top/FHPythonUtils/CatPandoc.svg?style=for-the-badge&cacheSeconds=28800)](../../)
+[![Issues](https://img.shields.io/github/issues/FHPythonUtils/CatPandoc.svg?style=for-the-badge&cacheSeconds=28800)](../../issues)
+[![License](https://img.shields.io/github/license/FHPythonUtils/CatPandoc.svg?style=for-the-badge&cacheSeconds=28800)](/LICENSE.md)
+[![Commit activity](https://img.shields.io/github/commit-activity/m/FHPythonUtils/CatPandoc.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
+[![Last commit](https://img.shields.io/github/last-commit/FHPythonUtils/CatPandoc.svg?style=for-the-badge&cacheSeconds=28800)](../../commits/master)
+[![PyPI Downloads](https://img.shields.io/pypi/dm/catpandoc.svg?style=for-the-badge&cacheSeconds=28800)](https://pypistats.org/packages/catpandoc)
+[![PyPI Total Downloads](https://img.shields.io/badge/dynamic/json?style=for-the-badge&label=total%20downloads&query=%24.total_downloads&url=https%3A%2F%2Fapi%2Epepy%2Etech%2Fapi%2Fv2%2Fprojects%2Fcatpandoc)](https://pepy.tech/project/catpandoc)
+[![PyPI Version](https://img.shields.io/pypi/v/catpandoc.svg?style=for-the-badge&cacheSeconds=28800)](https://pypi.org/project/catpandoc)
 
 <!-- omit in toc -->
 # CatPandoc
