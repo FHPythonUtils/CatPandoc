@@ -69,5 +69,3 @@ def pandoc2ansi(file: str, width: int = 79) -> str:
 def pandoc2plain(file: str, width: int = 79) -> str:
     ...
 ```
-
-

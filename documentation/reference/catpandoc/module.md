@@ -5,5 +5,4 @@
 Module
 
 > Auto-generated documentation for [catpandoc.__main__](../../../catpandoc/__main__.py) module.
-
 - [Module](#module)
