@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "catpandoc"
-version = "2023"
+version = "2024"
 license = "mit"
 description = "Cat multiple document files to the terminal"
 authors = ["FredHappyface"]
@@ -26,15 +26,15 @@ catpandoc = 'catpandoc.application:cli'
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
-pypandoc = "<2,>=1.11"
-rich = "<14,>=13.5.2"
+pypandoc = "<2,>=1.12"
+rich = "<14,>=13.7.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.4.0"
-tox = "^4.6.3"
-coverage = "^7.3.0"
-pylint = "^2.17.5"
-handsdown = "^2.0.1"
+pytest = "^7.4.4"
+tox = "^4.11.4"
+coverage = "^7.4.0"
+pylint = "^3.0.3"
+handsdown = "^2.1.0"
 
 [tool.black]
 line-length = 100

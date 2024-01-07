@@ -21,8 +21,7 @@ Parse args from the command line
 #### Signature
 
 ```python
-def cli() -> None:
-    ...
+def cli() -> None: ...
 ```
 
 
@@ -40,8 +39,7 @@ Handle the args and output to the terminal
 #### Signature
 
 ```python
-def handle(args: argparse.Namespace):
-    ...
+def handle(args: argparse.Namespace): ...
 ```
 
 
@@ -53,8 +51,7 @@ def handle(args: argparse.Namespace):
 #### Signature
 
 ```python
-def pandoc2ansi(file: str, width: int = 79) -> str:
-    ...
+def pandoc2ansi(file: str, width: int = 79) -> str: ...
 ```
 
 
@@ -66,6 +63,5 @@ def pandoc2ansi(file: str, width: int = 79) -> str:
 #### Signature
 
 ```python
-def pandoc2plain(file: str, width: int = 79) -> str:
-    ...
+def pandoc2plain(file: str, width: int = 79) -> str: ...
 ```
