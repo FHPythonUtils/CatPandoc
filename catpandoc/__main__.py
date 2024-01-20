@@ -1,4 +1,4 @@
-"""Main entry point for cli
+"""Main entry point for cli.
 """
 from __future__ import annotations
 

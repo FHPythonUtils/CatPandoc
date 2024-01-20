@@ -1,5 +1,5 @@
 """CLI Application
-Cat a pandoc json string
+Cat a pandoc json string.
 """
 from __future__ import annotations
 
@@ -26,10 +26,11 @@ def pandoc2plain(file: str, width: int = 79) -> str:
 	return capture.get()
 
 
-def handle(args: argparse.Namespace):
-	"""Handle the args and output to the terminal
+def handle(args: argparse.Namespace) -> None:
+	"""Handle the args and output to the terminal.
 
 	Args:
+	----
 		args (argparse.Namespace): Args
 	"""
 
@@ -47,7 +48,7 @@ def handle(args: argparse.Namespace):
 
 
 def cli() -> None:
-	"""Parse args from the command line"""
+	"""Parse args from the command line."""
 	parser = argparse.ArgumentParser(description="Print md")
 	parser.add_argument("file", help="file to render")
 	parser.add_argument("--width", help="terminal width", action="store", type=int)
