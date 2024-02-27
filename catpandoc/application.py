@@ -32,6 +32,7 @@ def handle(args: argparse.Namespace) -> None:
 	Args:
 	----
 		args (argparse.Namespace): Args
+
 	"""
 
 	# Open file and convert to JSON

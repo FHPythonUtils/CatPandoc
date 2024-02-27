@@ -1,8 +1,6 @@
 # Application
 
-[Catpandoc Index](../README.md#catpandoc-index) /
-[Catpandoc](./index.md#catpandoc) /
-Application
+[Catpandoc Index](../README.md#catpandoc-index) / [Catpandoc](./index.md#catpandoc) / Application
 
 > Auto-generated documentation for [catpandoc.application](../../../catpandoc/application.py) module.
 
@@ -14,9 +12,9 @@ Application
 
 ## cli
 
-[Show source in application.py:49](../../../catpandoc/application.py#L49)
+[Show source in application.py:51](../../../catpandoc/application.py#L51)
 
-Parse args from the command line
+Parse args from the command line.
 
 #### Signature
 
@@ -30,16 +28,17 @@ def cli() -> None: ...
 
 [Show source in application.py:29](../../../catpandoc/application.py#L29)
 
-Handle the args and output to the terminal
+Handle the args and output to the terminal.
 
 #### Arguments
 
-- `args` *argparse.Namespace* - Args
+----
+ - `args` *argparse.Namespace* - Args
 
 #### Signature
 
 ```python
-def handle(args: argparse.Namespace): ...
+def handle(args: argparse.Namespace) -> None: ...
 ```
 
 
