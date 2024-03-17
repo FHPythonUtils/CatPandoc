@@ -170,7 +170,7 @@ pandoc2pysimplegui.py   Generate PySimpleGUI widgets   -
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#import}                                                                  
 
@@ -181,7 +181,7 @@ pandoc2pysimplegui.py   Generate PySimpleGUI widgets   -
 Take a look at test/catcomplex.py for an example of how to use catpandoc in    
 your own project. Or take a look at the example below                          
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#documentation}                                                           
 
@@ -199,7 +199,7 @@ See the Docs for more information.
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 Head to https://pypi.org/project/catpandoc/ for more info                      
 
@@ -232,7 +232,7 @@ tested with both 3.7 and 3.10
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#windows---python.org}                                                    
 
@@ -256,7 +256,7 @@ the latest version.
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#dnf}                                                                     
 
@@ -264,7 +264,7 @@ the latest version.
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#install-python-on-macos}                                                 
 
@@ -279,7 +279,7 @@ the latest version.
 
 :::                                                                            
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 ::: {#macos---python.org}                                                      
 
@@ -341,7 +341,7 @@ the latest version.
  3 Open the command line and change directory to where you wish to clone to    
  4 Type 'git clone' followed by URL in step 2                                  
 
-::: Shaded ::: Highlighting ::: :::                                            
+:::: Shaded ::: Highlighting ::: ::::                                          
 
 More information can be found at                                               
 https://help.github.com/en/articles/cloning-a-repository                       
