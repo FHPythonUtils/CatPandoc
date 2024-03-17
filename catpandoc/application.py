@@ -1,6 +1,7 @@
 """CLI Application
 Cat a pandoc json string.
 """
+
 from __future__ import annotations
 
 import argparse

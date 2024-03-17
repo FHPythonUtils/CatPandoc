@@ -12,7 +12,7 @@
 
 ## cli
 
-[Show source in application.py:51](../../../catpandoc/application.py#L51)
+[Show source in application.py:52](../../../catpandoc/application.py#L52)
 
 Parse args from the command line.
 
@@ -26,7 +26,7 @@ def cli() -> None: ...
 
 ## handle
 
-[Show source in application.py:29](../../../catpandoc/application.py#L29)
+[Show source in application.py:30](../../../catpandoc/application.py#L30)
 
 Handle the args and output to the terminal.
 
@@ -45,7 +45,7 @@ def handle(args: argparse.Namespace) -> None: ...
 
 ## pandoc2ansi
 
-[Show source in application.py:13](../../../catpandoc/application.py#L13)
+[Show source in application.py:14](../../../catpandoc/application.py#L14)
 
 #### Signature
 
@@ -57,7 +57,7 @@ def pandoc2ansi(file: str, width: int = 79) -> str: ...
 
 ## pandoc2plain
 
-[Show source in application.py:21](../../../catpandoc/application.py#L21)
+[Show source in application.py:22](../../../catpandoc/application.py#L22)
 
 #### Signature
 
