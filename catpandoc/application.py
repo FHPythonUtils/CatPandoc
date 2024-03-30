@@ -13,6 +13,7 @@ from rich.markdown import Markdown
 
 def pandoc2ansi(file: str, width: int = 79) -> str:
 	console = Console(width=width)
+	pypandoc.ensure_pandoc_installed()
 	markdown = Markdown(pypandoc.convert_file(file, "md"))
 	with console.capture() as capture:
 		console.print(markdown)
@@ -21,6 +22,7 @@ def pandoc2ansi(file: str, width: int = 79) -> str:
 
 def pandoc2plain(file: str, width: int = 79) -> str:
 	console = Console(color_system=None, width=width)
+	pypandoc.ensure_pandoc_installed()
 	markdown = Markdown(pypandoc.convert_file(file, "md"))
 	with console.capture() as capture:
 		console.print(markdown)
