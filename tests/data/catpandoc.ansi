@@ -1,282 +1,282 @@
-🌆 GitHub top
-language 🌆 Issues 🌆 License 🌆 Commit
-activity 🌆 Last
-commit 🌆 PyPI
-Downloads 🌆 PyPI Total
-Downloads 🌆 PyPI
-Version                                                                        
+🌆 [4;34mGitHub top[0m
+[4;34mlanguage[0m 🌆 [4;34mIssues[0m 🌆 [4;34mLicense[0m 🌆 [4;34mCommit[0m
+[4;34mactivity[0m 🌆 [4;34mLast[0m
+[4;34mcommit[0m 🌆 [4;34mPyPI[0m
+[4;34mDownloads[0m 🌆 [4;34mPyPI Total[0m
+[4;34mDownloads[0m 🌆 [4;34mPyPI[0m
+[4;34mVersion[0m                                                                        
 
-                                                                               
- <!-- omit in toc -->                                                          
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m<!-- omit in toc -->[0m[48;2;39;40;34m                                                         [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-┌─────────────────────────────────────────────────────────────────────────────┐
-│                                  CatPandoc                                  │
-└─────────────────────────────────────────────────────────────────────────────┘
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃                                  [1mCatPandoc[0m                                  ┃
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
-<img src="readme-assets/icons/name.png" alt="Project Icon" width="750">{=html} 
+[1;36;40m<img src="readme-assets/icons/name.png" alt="Project Icon" width="750">[0m{=html} 
 
 Cat multiple documents to the terminal. The continuation of CatMD              
 
- • Features                                                                    
-    • Document Compatability                                                   
-    • Terminal 'rendering'                                                     
- • Roadmap                                                                     
- • Use                                                                         
-    • CLI                                                                      
-    • Import                                                                   
- • Documentation                                                               
- • Install With PIP                                                            
- • Language information                                                        
-    • Built for                                                                
- • Install Python on Windows                                                   
-    • Chocolatey                                                               
-    • Windows - Python.org                                                     
- • Install Python on Linux                                                     
-    • Apt                                                                      
-    • Dnf                                                                      
- • Install Python on MacOS                                                     
-    • Homebrew                                                                 
-    • MacOS - Python.org                                                       
- • How to run                                                                  
-    • Windows                                                                  
-    • Linux/ MacOS                                                             
- • Building                                                                    
- • Testing                                                                     
- • Download Project                                                            
-    • Clone                                                                    
-       • Using The Command Line                                                
-       • Using GitHub Desktop                                                  
-    • Download Zip File                                                        
- • Community Files                                                             
-    • Licence                                                                  
-    • Changelog                                                                
-    • Code of Conduct                                                          
-    • Contributing                                                             
-    • Security                                                                 
-    • Support                                                                  
-    • Rationale                                                                
- • Screenshots                                                                 
-    • Desktop                                                                  
-    • Themes                                                                   
+[1;33m • [0m[4;34mFeatures[0m                                                                    
+[1;33m   [0m[1;33m • [0m[4;34mDocument Compatability[0m                                                   
+[1;33m   [0m[1;33m • [0m[4;34mTerminal 'rendering'[0m                                                     
+[1;33m • [0m[4;34mRoadmap[0m                                                                     
+[1;33m • [0m[4;34mUse[0m                                                                         
+[1;33m   [0m[1;33m • [0m[4;34mCLI[0m                                                                      
+[1;33m   [0m[1;33m • [0m[4;34mImport[0m                                                                   
+[1;33m • [0m[4;34mDocumentation[0m                                                               
+[1;33m • [0m[4;34mInstall With PIP[0m                                                            
+[1;33m • [0m[4;34mLanguage information[0m                                                        
+[1;33m   [0m[1;33m • [0m[4;34mBuilt for[0m                                                                
+[1;33m • [0m[4;34mInstall Python on Windows[0m                                                   
+[1;33m   [0m[1;33m • [0m[4;34mChocolatey[0m                                                               
+[1;33m   [0m[1;33m • [0m[4;34mWindows - Python.org[0m                                                     
+[1;33m • [0m[4;34mInstall Python on Linux[0m                                                     
+[1;33m   [0m[1;33m • [0m[4;34mApt[0m                                                                      
+[1;33m   [0m[1;33m • [0m[4;34mDnf[0m                                                                      
+[1;33m • [0m[4;34mInstall Python on MacOS[0m                                                     
+[1;33m   [0m[1;33m • [0m[4;34mHomebrew[0m                                                                 
+[1;33m   [0m[1;33m • [0m[4;34mMacOS - Python.org[0m                                                       
+[1;33m • [0m[4;34mHow to run[0m                                                                  
+[1;33m   [0m[1;33m • [0m[4;34mWindows[0m                                                                  
+[1;33m   [0m[1;33m • [0m[4;34mLinux/ MacOS[0m                                                             
+[1;33m • [0m[4;34mBuilding[0m                                                                    
+[1;33m • [0m[4;34mTesting[0m                                                                     
+[1;33m • [0m[4;34mDownload Project[0m                                                            
+[1;33m   [0m[1;33m • [0m[4;34mClone[0m                                                                    
+[1;33m   [0m[1;33m   [0m[1;33m • [0m[4;34mUsing The Command Line[0m                                                
+[1;33m   [0m[1;33m   [0m[1;33m • [0m[4;34mUsing GitHub Desktop[0m                                                  
+[1;33m   [0m[1;33m • [0m[4;34mDownload Zip File[0m                                                        
+[1;33m • [0m[4;34mCommunity Files[0m                                                             
+[1;33m   [0m[1;33m • [0m[4;34mLicence[0m                                                                  
+[1;33m   [0m[1;33m • [0m[4;34mChangelog[0m                                                                
+[1;33m   [0m[1;33m • [0m[4;34mCode of Conduct[0m                                                          
+[1;33m   [0m[1;33m • [0m[4;34mContributing[0m                                                             
+[1;33m   [0m[1;33m • [0m[4;34mSecurity[0m                                                                 
+[1;33m   [0m[1;33m • [0m[4;34mSupport[0m                                                                  
+[1;33m   [0m[1;33m • [0m[4;34mRationale[0m                                                                
+[1;33m • [0m[4;34mScreenshots[0m                                                                 
+[1;33m   [0m[1;33m • [0m[4;34mDesktop[0m                                                                  
+[1;33m   [0m[1;33m • [0m[4;34mThemes[0m                                                                   
 
 
-                                   Features                                    
+                                   [1;4mFeatures[0m                                    
 
-                            Document Compatability                             
+                            [1mDocument Compatability[0m                             
 
 Lightweight markup formats                                                     
 
- • Markdown (including CommonMark and GitHub-flavored Markdown)                
- • reStructuredText                                                            
- • Emacs Org-Mode                                                              
- • Emacs Muse                                                                  
- • Textile                                                                     
- • txt2tags                                                                    
+[1;33m • [0mMarkdown (including CommonMark and GitHub-flavored Markdown)                
+[1;33m • [0mreStructuredText                                                            
+[1;33m • [0mEmacs Org-Mode                                                              
+[1;33m • [0mEmacs Muse                                                                  
+[1;33m • [0mTextile                                                                     
+[1;33m • [0mtxt2tags                                                                    
 
 HTML formats                                                                   
 
- • (X)HTML 4                                                                   
- • HTML5                                                                       
+[1;33m • [0m(X)HTML 4                                                                   
+[1;33m • [0mHTML5                                                                       
 
 Ebooks                                                                         
 
- • EPUB version 2 or 3                                                         
- • FictionBook2                                                                
+[1;33m • [0mEPUB version 2 or 3                                                         
+[1;33m • [0mFictionBook2                                                                
 
 Documentation formats                                                          
 
- • Haddock markup                                                              
+[1;33m • [0mHaddock markup                                                              
 
 Roff formats                                                                   
 
- • roff man                                                                    
+[1;33m • [0mroff man                                                                    
 
 TeX formats                                                                    
 
- • LaTeX                                                                       
+[1;33m • [0mLaTeX                                                                       
 
 XML formats                                                                    
 
- • DocBook version 4 or 5                                                      
- • JATS                                                                        
+[1;33m • [0mDocBook version 4 or 5                                                      
+[1;33m • [0mJATS                                                                        
 
 Outline formats                                                                
 
- • OPML                                                                        
+[1;33m • [0mOPML                                                                        
 
 Data formats                                                                   
 
- • CSV tables                                                                  
+[1;33m • [0mCSV tables                                                                  
 
 Word processor formats                                                         
 
- • Microsoft Word docx                                                         
- • OpenOffice/LibreOffice ODT                                                  
+[1;33m • [0mMicrosoft Word docx                                                         
+[1;33m • [0mOpenOffice/LibreOffice ODT                                                  
 
 Interactive notebook formats                                                   
 
- • Jupyter notebook (ipynb)                                                    
+[1;33m • [0mJupyter notebook (ipynb)                                                    
 
 Wiki markup formats                                                            
 
- • MediaWiki markup                                                            
- • DokuWiki markup                                                             
- • TikiWiki markup                                                             
- • TWiki markup                                                                
- • Jira wiki markup                                                            
+[1;33m • [0mMediaWiki markup                                                            
+[1;33m • [0mDokuWiki markup                                                             
+[1;33m • [0mTikiWiki markup                                                             
+[1;33m • [0mTWiki markup                                                                
+[1;33m • [0mJira wiki markup                                                            
 
-                             Terminal 'rendering'                              
+                             [1mTerminal 'rendering'[0m                              
 
 Highlights the following:                                                      
 
- • Headers 1-6                                                                 
- • Unordered and ordered lists                                                 
- • Block quotes                                                                
- • Bold, Italic, Strikethrough, inline code                                    
- • Line Break (br)                                                             
+[1;33m • [0mHeaders 1-6                                                                 
+[1;33m • [0mUnordered and ordered lists                                                 
+[1;33m • [0mBlock quotes                                                                
+[1;33m • [0mBold, Italic, Strikethrough, inline code                                    
+[1;33m • [0mLine Break (br)                                                             
 
 Renders the following                                                          
 
- • Tables                                                                      
- • Images (uses catimage for this so they can look a bit blurry...)            
+[1;33m • [0mTables                                                                      
+[1;33m • [0mImages (uses catimage for this so they can look a bit blurry...)            
 
 Higlights code blocks                                                          
 
- • Uses pygments for code syntax highlighting                                  
+[1;33m • [0mUses pygments for code syntax highlighting                                  
 
 
-                                    Roadmap                                    
+                                    [1;4mRoadmap[0m                                    
 
 For completed components, see the changelog (link below)                       
 
 Feature                 Description                    Status                  
 
-───────────────────────────────────────────────────────────────────────────────
+[33m───────────────────────────────────────────────────────────────────────────────[0m
 pandoc2pysimplegui.py   Generate PySimpleGUI widgets   -                       
 
 
-                                      Use                                      
+                                      [1;4mUse[0m                                      
 
-                                      CLI                                      
+                                      [1mCLI[0m                                      
 
-                                                                               
- usage: application.py [-h] [--width WIDTH] [--theme THEME] file               
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34musage: application.py [-h] [--width WIDTH] [--theme THEME] file[0m[48;2;39;40;34m              [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-                                    Import                                     
+                                    [1mImport[0m                                     
 
 Take a look at test/catcomplex.py for an example of how to use catpandoc in    
 your own project. Or take a look at the example below                          
 
-                                                                               
- import json                                                                   
- import pypandoc                                                               
- from catpandoc import pandoc2ansi, processpandoc                              
-                                                                               
- output = json.loads(pypandoc.convert_file("cheatsheet.md", 'json'))           
- for block in output["blocks"]:                                                
-     pandoc = pandoc2ansi.Pandoc2Ansi(130, 5, (4, 0, 0))                       
-     processpandoc.processBlock(block, pandoc)                                 
-     print(pandoc.genOutput())                                                 
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mimport json[0m[48;2;39;40;34m                                                                  [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mimport pypandoc[0m[48;2;39;40;34m                                                              [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mfrom catpandoc import pandoc2ansi, processpandoc[0m[48;2;39;40;34m                             [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[48;2;39;40;34m                                                                             [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34moutput = json.loads(pypandoc.convert_file("cheatsheet.md", 'json'))[0m[48;2;39;40;34m          [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mfor block in output["blocks"]:[0m[48;2;39;40;34m                                               [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m    pandoc = pandoc2ansi.Pandoc2Ansi(130, 5, (4, 0, 0))[0m[48;2;39;40;34m                      [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m    processpandoc.processBlock(block, pandoc)[0m[48;2;39;40;34m                                [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m    print(pandoc.genOutput())[0m[48;2;39;40;34m                                                [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
 
-                                 Documentation                                 
+                                 [1;4mDocumentation[0m                                 
 
 A high-level overview of how the documentation is organized organized will help
 you know where to look for certain things:                                     
 
-                                                                               
- <!--                                                                          
- - [Tutorials](/documentation/tutorials) take you by the hand through a series 
- of steps to get                                                               
-   started using the software. Start here if you’re new.                       
- -->                                                                           
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m<!--[0m[48;2;39;40;34m                                                                         [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m- [Tutorials](/documentation/tutorials) take you by the hand through a series[0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mof steps to get[0m[48;2;39;40;34m                                                              [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m  started using the software. Start here if you’re new.[0m[48;2;39;40;34m                      [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34m-->[0m[48;2;39;40;34m                                                                          [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
- • The Technical Reference documents APIs and other aspects of the machinery.  
-   This documentation describes how to use the classes and functions at a lower
-   level and assume that you have a good high-level understanding of the       
-   software. `<!--                                                             
-    • The Help guide provides a starting point and outlines common issues that 
-      you may have. -->`{=html}                                                
+[1;33m • [0mThe [4;34mTechnical Reference[0m documents APIs and other aspects of the machinery.  
+[1;33m   [0mThis documentation describes how to use the classes and functions at a lower
+[1;33m   [0mlevel and assume that you have a good high-level understanding of the       
+[1;33m   [0msoftware. `<!--                                                             
+[1;33m   [0m[1;33m • [0mThe [4;34mHelp[0m guide provides a starting point and outlines common issues that 
+[1;33m   [0m[1;33m   [0myou may have. -->`{=html}                                                
 
 
-                               Install With PIP                                
+                               [1;4mInstall With PIP[0m                                
 
-                                                                               
- pip install catpandoc                                                         
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mpip install catpandoc[0m[48;2;39;40;34m                                                        [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
 Head to https://pypi.org/project/catpandoc/ for more info                      
 
 
-                             Language information                              
+                             [1;4mLanguage information[0m                              
 
-                                   Built for                                   
+                                   [1mBuilt for[0m                                   
 
 This program has been written for Python versions 3.8 - 3.11 and has been      
 tested with both 3.8 and 3.11                                                  
 
 
-                           Install Python on Windows                           
+                           [1;4mInstall Python on Windows[0m                           
 
-                                  Chocolatey                                   
+                                  [1mChocolatey[0m                                   
 
-                                                                               
- choco install python                                                          
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mchoco install python[0m[48;2;39;40;34m                                                         [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-                             Windows - Python.org                              
+                             [1mWindows - Python.org[0m                              
 
 To install Python, go to https://www.python.org/downloads/windows/ and download
 the latest version.                                                            
 
 
-                            Install Python on Linux                            
+                            [1;4mInstall Python on Linux[0m                            
 
-                                      Apt                                      
+                                      [1mApt[0m                                      
 
-                                                                               
- sudo apt install python3.x                                                    
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34msudo apt install python3.x[0m[48;2;39;40;34m                                                   [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-                                      Dnf                                      
+                                      [1mDnf[0m                                      
 
-                                                                               
- sudo dnf install python3.x                                                    
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34msudo dnf install python3.x[0m[48;2;39;40;34m                                                   [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
 
-                            Install Python on MacOS                            
+                            [1;4mInstall Python on MacOS[0m                            
 
-                                   Homebrew                                    
+                                   [1mHomebrew[0m                                    
 
-                                                                               
- brew install python@3.x                                                       
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mbrew install python@3.x[0m[48;2;39;40;34m                                                      [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-                              MacOS - Python.org                               
+                              [1mMacOS - Python.org[0m                               
 
 To install Python, go to https://www.python.org/downloads/macos/ and download  
 the latest version.                                                            
 
 
-                                  How to run                                   
+                                  [1;4mHow to run[0m                                   
 
-                                    Windows                                    
+                                    [1mWindows[0m                                    
 
- • Module py -3.x -m [module] or [module] (if module installs a script)        
- • File py -3.x [file] or ./[file]                                             
+[1;33m • [0mModule [1;36;40mpy -3.x -m [module][0m or [1;36;40m[module][0m (if module installs a script)        
+[1;33m • [0mFile [1;36;40mpy -3.x [file][0m or [1;36;40m./[file][0m                                             
 
-                                 Linux/ MacOS                                  
+                                 [1mLinux/ MacOS[0m                                  
 
- • Module python3.x -m [module] or [module] (if module installs a script)      
- • File python3.x [file] or ./[file]                                           
+[1;33m • [0mModule [1;36;40mpython3.x -m [module][0m or [1;36;40m[module][0m (if module installs a script)      
+[1;33m • [0mFile [1;36;40mpython3.x [file][0m or [1;36;40m./[file][0m                                           
 
 
-                                   Building                                    
+                                   [1;4mBuilding[0m                                    
 
 This project uses https://github.com/FHPythonUtils/FHMake to automate most of  
 the building. This command generates the documentation, updates the            
@@ -284,125 +284,125 @@ requirements.txt and builds the library artefacts
 
 Note the functionality provided by fhmake can be approximated by the following 
 
-                                                                               
- handsdown  --cleanup -o documentation/reference                               
- poetry export -f requirements.txt --output requirements.txt                   
- poetry export -f requirements.txt --with dev --output requirements_optional.t 
- poetry build                                                                  
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mhandsdown  --cleanup -o documentation/reference[0m[48;2;39;40;34m                              [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mpoetry export -f requirements.txt --output requirements.txt[0m[48;2;39;40;34m                  [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mpoetry export -f requirements.txt --with dev --output requirements_optional.t[0m[48;2;39;40;34m [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mpoetry build[0m[48;2;39;40;34m                                                                 [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-fhmake audit can be run to perform additional checks                           
+[1;36;40mfhmake audit[0m can be run to perform additional checks                           
 
 
-                                    Testing                                    
+                                    [1;4mTesting[0m                                    
 
 For testing with the version of python used by poetry use                      
 
-                                                                               
- poetry run pytest                                                             
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mpoetry run pytest[0m[48;2;39;40;34m                                                            [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
-Alternatively use tox to run tests over python 3.8 - 3.11                      
+Alternatively use [1;36;40mtox[0m to run tests over python 3.8 - 3.11                      
 
-                                                                               
- tox                                                                           
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mtox[0m[48;2;39;40;34m                                                                          [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
 
-                               Download Project                                
+                               [1;4mDownload Project[0m                                
 
-                                     Clone                                     
+                                     [1mClone[0m                                     
 
-                            Using The Command Line                             
+                            [1;2mUsing The Command Line[0m                             
 
- 1 Press the Clone or download button in the top right                         
- 2 Copy the URL (link)                                                         
- 3 Open the command line and change directory to where you wish to clone to    
- 4 Type 'git clone' followed by URL in step 2                                  
+[1;33m 1 [0mPress the Clone or download button in the top right                         
+[1;33m 2 [0mCopy the URL (link)                                                         
+[1;33m 3 [0mOpen the command line and change directory to where you wish to clone to    
+[1;33m 4 [0mType 'git clone' followed by URL in step 2                                  
 
-                                                                               
- git clone https://github.com/FHPythonUtils/CatPandoc                          
-                                                                               
+[48;2;39;40;34m                                                                               [0m
+[48;2;39;40;34m [0m[38;2;248;248;242;48;2;39;40;34mgit clone https://github.com/FHPythonUtils/CatPandoc[0m[48;2;39;40;34m                         [0m[48;2;39;40;34m [0m
+[48;2;39;40;34m                                                                               [0m
 
 More information can be found at                                               
 https://help.github.com/en/articles/cloning-a-repository                       
 
-                             Using GitHub Desktop                              
+                             [1;2mUsing GitHub Desktop[0m                              
 
- 1 Press the Clone or download button in the top right                         
- 2 Click open in desktop                                                       
- 3 Choose the path for where you want and click Clone                          
+[1;33m 1 [0mPress the Clone or download button in the top right                         
+[1;33m 2 [0mClick open in desktop                                                       
+[1;33m 3 [0mChoose the path for where you want and click Clone                          
 
 More information can be found at                                               
 https://help.github.com/en/desktop/contributing-to-projects/cloning-a-repositor
 y-from-github-to-github-desktop                                                
 
-                               Download Zip File                               
+                               [1mDownload Zip File[0m                               
 
- 1 Download this GitHub repository                                             
- 2 Extract the zip archive                                                     
- 3 Copy/ move to the desired location                                          
+[1;33m 1 [0mDownload this GitHub repository                                             
+[1;33m 2 [0mExtract the zip archive                                                     
+[1;33m 3 [0mCopy/ move to the desired location                                          
 
 
-                                Community Files                                
+                                [1;4mCommunity Files[0m                                
 
-                                    Licence                                    
+                                    [1mLicence[0m                                    
 
-MIT License Copyright (c) FredHappyface (See the LICENSE for more information.)
+MIT License Copyright (c) FredHappyface (See the [4;34mLICENSE[0m for more information.)
 
-                                   Changelog                                   
+                                   [1mChangelog[0m                                   
 
-See the Changelog for more information.                                        
+See the [4;34mChangelog[0m for more information.                                        
 
-                                Code of Conduct                                
+                                [1mCode of Conduct[0m                                
 
-Online communities include people from many backgrounds. The Project           
+Online communities include people from many backgrounds. The [3mProject[0m           
 contributors are committed to providing a friendly, safe and welcoming         
-environment for all. Please see the Code of Conduct for more information.      
+environment for all. Please see the [4;34mCode of[0m[4;34m [0m[4;34mConduct[0m for more information.      
 
-                                 Contributing                                  
+                                 [1mContributing[0m                                  
 
-Contributions are welcome, please see the Contributing Guidelines for more     
+Contributions are welcome, please see the [4;34mContributing[0m[4;34m [0m[4;34mGuidelines[0m for more     
 information.                                                                   
 
-                                   Security                                    
+                                   [1mSecurity[0m                                    
 
-Thank you for improving the security of the project, please see the Security   
-Policy for more information.                                                   
+Thank you for improving the security of the project, please see the [4;34mSecurity[0m[4;34m [0m  
+[4;34mPolicy[0m for more information.                                                   
 
-                                    Support                                    
+                                    [1mSupport[0m                                    
 
 Thank you for using this project, I hope it is of use to you. Please be aware  
 that those involved with the project often do so for fun along with other      
-commitments (such as work, family, etc). Please see the Support Policy for more
+commitments (such as work, family, etc). Please see the [4;34mSupport[0m[4;34m [0m[4;34mPolicy[0m for more
 information.                                                                   
 
-                                   Rationale                                   
+                                   [1mRationale[0m                                   
 
 The rationale acts as a guide to various processes regarding projects such as  
-the versioning scheme and the programming styles used. Please see the Rationale
+the versioning scheme and the programming styles used. Please see the [4;34mRationale[0m
 for more information.                                                          
 
 
-                                  Screenshots                                  
+                                  [1;4mScreenshots[0m                                  
 
-                                    Desktop                                    
-
-
-<img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot  
-1" width="600">{=html} <img                                                    
-src="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2"    
-width="600">{=html} <img                                                       
-src="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3"    
-width="600">{=html}                                                            
+                                    [1mDesktop[0m                                    
 
 
-                                    Themes                                     
+[1;36;40m<img src="readme-assets/screenshots/desktop/screenshot-0.png" alt="Screenshot [0m 
+[1;36;40m1" width="600">[0m{=html} [1;36;40m<img [0m                                                   
+[1;36;40msrc="readme-assets/screenshots/desktop/screenshot-1.png" alt="Screenshot 2" [0m   
+[1;36;40mwidth="600">[0m{=html} [1;36;40m<img [0m                                                      
+[1;36;40msrc="readme-assets/screenshots/desktop/screenshot-2.png" alt="Screenshot 3" [0m   
+[1;36;40mwidth="600">[0m{=html}                                                            
 
 
-<img src="readme-assets/screenshots/themes/theme-1.png" alt="Screenshot 1"     
-width="200">{=html} <img src="readme-assets/screenshots/themes/theme-2.png"    
-alt="Screenshot 2" width="200">{=html} <img                                    
-src="readme-assets/screenshots/themes/theme-3.png" alt="Screenshot 3"          
-width="200">{=html}                                                            
+                                    [1mThemes[0m                                     
+
+
+[1;36;40m<img src="readme-assets/screenshots/themes/theme-1.png" alt="Screenshot 1" [0m    
+[1;36;40mwidth="200">[0m{=html} [1;36;40m<img src="readme-assets/screenshots/themes/theme-2.png" [0m   
+[1;36;40malt="Screenshot 2" width="200">[0m{=html} [1;36;40m<img [0m                                   
+[1;36;40msrc="readme-assets/screenshots/themes/theme-3.png" alt="Screenshot 3" [0m         
+[1;36;40mwidth="200">[0m{=html}                                                            
 

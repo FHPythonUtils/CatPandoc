@@ -5,6 +5,8 @@ Cat a pandoc json string.
 from __future__ import annotations
 
 import argparse
+import re
+from io import StringIO
 
 import pypandoc
 from rich.console import Console
@@ -12,21 +14,30 @@ from rich.markdown import Markdown
 
 
 def pandoc2ansi(file: str, width: int = 79) -> str:
-	console = Console(width=width)
+	string = StringIO()
+	console = Console(file=string, color_system="truecolor", safe_box=False, width=width)
 	pypandoc.ensure_pandoc_installed()
 	markdown = Markdown(pypandoc.convert_file(file, "md"))
-	with console.capture() as capture:
-		console.print(markdown)
-	return capture.get()
+	console.print(markdown)
+	return string.getvalue()
+
+def stripAnsi(string: str) -> str:
+	"""Strip ansi codes from a given string.
+
+	Args:
+	----
+		string (str): string to strip codes from
+
+	Returns:
+	-------
+		str: plaintext, utf-8 string (safe for writing to files)
+
+	"""
+	return re.compile(r"\x1B(?:[@-Z\\-_]|\[[0-?]*[ -/]*[@-~])").sub("", string)
 
 
 def pandoc2plain(file: str, width: int = 79) -> str:
-	console = Console(color_system=None, width=width)
-	pypandoc.ensure_pandoc_installed()
-	markdown = Markdown(pypandoc.convert_file(file, "md"))
-	with console.capture() as capture:
-		console.print(markdown)
-	return capture.get()
+	return stripAnsi(pandoc2ansi(file, width))
 
 
 def handle(args: argparse.Namespace) -> None:
