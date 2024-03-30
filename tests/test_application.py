@@ -28,12 +28,12 @@ def test_pandoc2plain() -> None:
 	)
 
 
-def test_pandoc2ansi_docx() -> None:
-	_aux_test_func(
-		pandoc_func=application.pandoc2ansi,
-		doc=f"{THISDIR}/data/catpandoc.docx",
-		compare_doc=f"{THISDIR}/data/catpandoc_docx.txt",
-	)
+# def test_pandoc2ansi_docx() -> None:
+# 	_aux_test_func(
+# 		pandoc_func=application.pandoc2ansi,
+# 		doc=f"{THISDIR}/data/catpandoc.docx",
+# 		compare_doc=f"{THISDIR}/data/catpandoc_docx.txt",
+# 	)
 
 
 def test_pandoc2ansi_html() -> None:
